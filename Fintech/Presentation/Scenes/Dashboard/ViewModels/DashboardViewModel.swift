@@ -21,15 +21,19 @@ final class DashboardViewModel: ObservableObject {
         self.fetchScoreUseCase = fetchScoreUseCase
         self.saveLogUseCase = saveLogUseCase
     }
+}
 
-    // MARK: Functionallity
+// MARK: Score functionality
+extension DashboardViewModel {
     func fetchScore() {
         fetchScoreUseCase.execute { result in
             switch result {
             case .success(let score):
                 self.updateScore(score)
+                self.saveScoreLog(score)
             case .failure(let error):
                 self.checkFetchScoreError(error)
+                self.saveErrorLog(error)
             }
         }
     }
@@ -61,5 +65,26 @@ final class DashboardViewModel: ObservableObject {
             title: title,
             description: description
         )
+    }
+}
+
+// MARK: Log functionality
+extension DashboardViewModel {
+    func saveScoreLog(_ score: ScoreDTO) {
+        let log = LogDTO(
+            type: .info,
+            description: "A score of \(score.value) out of \(score.maxValue) has been obtained"
+        )
+
+        saveLogUseCase.execute(log)
+    }
+
+    func saveErrorLog(_ error: Error) {
+        let log = LogDTO(
+            type: .error,
+            description: error.localizedDescription
+        )
+
+        saveLogUseCase.execute(log)
     }
 }
