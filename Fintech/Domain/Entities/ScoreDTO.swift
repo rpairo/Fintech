@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct ScoreEntity {
+struct ScoreDTO {
     // MARK: Properties
-    let score: Int
-    let scoreMax: Int
+    let value: Int
+    let maxValue: Int
 }

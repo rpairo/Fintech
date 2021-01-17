@@ -21,9 +21,8 @@ struct ScoreDataSource: ScoreDataSourceable {
         let request = URLRequest(url: url)
 
         URLSession.shared.dataTask(with: request) { data, _, error in
-            guard error == nil else {
-                failCompletion(completion, error: .error)
-                return
+            if let error = error {
+                failCompletion(completion, error: .unkown(error))
             }
 
             guard let data = data else {
@@ -31,7 +30,7 @@ struct ScoreDataSource: ScoreDataSourceable {
                 return
             }
 
-            guard let score = try? JSONDecoder().decode(ScoreDTO.self, from: data) else {
+            guard let score = try? JSONDecoder().decode(ScoreEntity.self, from: data) else {
                 failCompletion(completion, error: .decoding)
                 return
             }
@@ -40,7 +39,7 @@ struct ScoreDataSource: ScoreDataSourceable {
         }.resume()
     }
 
-    func successCompletion(_ completion: @escaping ScoreDataSourceResult, score: ScoreDTO) {
+    func successCompletion(_ completion: @escaping ScoreDataSourceResult, score: ScoreEntity) {
         DispatchQueue.main.async {
             completion(.success(score))
         }

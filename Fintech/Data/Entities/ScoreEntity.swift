@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct ScoreDTO: Decodable {
+struct ScoreEntity: Decodable {
     // MARK: Properties
-    let score: Int
-    let scoreMin: Int
-    let scoreMax: Int
+    let value: Int
+    let minValue: Int
+    let maxValue: Int
     let status: String
     let client: String
 
@@ -31,9 +31,9 @@ struct ScoreDTO: Decodable {
         status = try container.decode(String.self, forKey: .status)
 
         let report = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .report)
-        score = try report.decode(Int.self, forKey: .score)
-        scoreMin = try report.decode(Int.self, forKey: .scoreMin)
-        scoreMax = try report.decode(Int.self, forKey: .scoreMax)
+        value = try report.decode(Int.self, forKey: .score)
+        minValue = try report.decode(Int.self, forKey: .scoreMin)
+        maxValue = try report.decode(Int.self, forKey: .scoreMax)
         client = try report.decode(String.self, forKey: .client)
     }
 }

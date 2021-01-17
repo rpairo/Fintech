@@ -7,12 +7,16 @@
 
 import Foundation
 
+// MARK: Error handler
 enum FetchScoreError: Error {
-    case key(String)
+    case network
+    case unkown(Error)
 }
 
-typealias FetchScoreResult = (Result<ScoreEntity, FetchScoreError>) -> Void
+// MARK: Result
+typealias FetchScoreResult = (Result<ScoreDTO, FetchScoreError>) -> Void
 
+// MARK: Protocol
 protocol FetchScoreUseCaseable {
     func execute(completion: @escaping FetchScoreResult)
 }

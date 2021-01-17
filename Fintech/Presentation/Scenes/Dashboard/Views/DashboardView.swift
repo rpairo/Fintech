@@ -14,11 +14,7 @@ struct DashboardView: View {
     // MARK: View
     var body: some View {
         VStack {
-            CircleProgressBar(
-                score: $viewModel.score,
-                scoreMax: $viewModel.scoreMax,
-                scorePercent: $viewModel.scorePercent
-            )
+            CircleProgressBar(score: $viewModel.score)
             .frame(width: 300.0, height: 300.0)
             .padding(40.0)
         }.onAppear {

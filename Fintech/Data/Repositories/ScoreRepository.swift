@@ -16,14 +16,19 @@ struct ScoreRepository: ScoreRepositable {
         dataSource.fetch { result in
             switch result {
             case .success(let scoreDTO):
-                let score = ScoreEntity(
-                    score: scoreDTO.score,
-                    scoreMax: scoreDTO.scoreMax
+                let score = ScoreDTO(
+                    value: scoreDTO.value,
+                    maxValue: scoreDTO.maxValue
                 )
 
                 completion(.success(score))
             case .failure(let error):
-                completion(.failure(.key(error.localizedDescription)))
+                switch error {
+                case .url, .data, .decoding:
+                    completion(.failure(.network))
+                case .unkown:
+                    completion(.failure(.unkown(error)))
+                }
             }
         }
     }

@@ -7,15 +7,18 @@
 
 import Foundation
 
+// MARK: Error handler
 enum ScoreDataSourceError: Error {
     case url
     case decoding
     case data
-    case error
+    case unkown(Error)
 }
 
-typealias ScoreDataSourceResult = (Result<ScoreDTO, ScoreDataSourceError>) -> Void
+// MARK: Result
+typealias ScoreDataSourceResult = (Result<ScoreEntity, ScoreDataSourceError>) -> Void
 
+// MARK: Protocol
 protocol ScoreDataSourceable {
     func fetch(completion: @escaping ScoreDataSourceResult)
 }

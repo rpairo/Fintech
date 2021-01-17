@@ -9,14 +9,15 @@
 /* Begin PBXBuildFile section */
 		C46E396F25B21A5D009F96CF /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E396E25B21A5D009F96CF /* DashboardViewModel.swift */; };
 		C46E398C25B3AF40009F96CF /* CircleProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E398B25B3AF40009F96CF /* CircleProgressBar.swift */; };
-		C46E398F25B3D626009F96CF /* ScoreEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E398E25B3D626009F96CF /* ScoreEntity.swift */; };
+		C46E398F25B3D626009F96CF /* ScoreDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E398E25B3D626009F96CF /* ScoreDTO.swift */; };
 		C46E399225B3D713009F96CF /* FetchScoreUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E399125B3D713009F96CF /* FetchScoreUseCase.swift */; };
 		C46E399725B3D864009F96CF /* FetchScoreUseCaseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E399625B3D864009F96CF /* FetchScoreUseCaseable.swift */; };
 		C46E39A125B3D92E009F96CF /* ScoreRepositable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39A025B3D92E009F96CF /* ScoreRepositable.swift */; };
 		C46E39A425B3DA42009F96CF /* ScoreRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39A325B3DA42009F96CF /* ScoreRepository.swift */; };
 		C46E39A825B3DB0B009F96CF /* ScoreDataSourceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39A725B3DB0B009F96CF /* ScoreDataSourceable.swift */; };
 		C46E39AC25B3DBCF009F96CF /* ScoreDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39AB25B3DBCF009F96CF /* ScoreDataSource.swift */; };
-		C46E39B025B3E06B009F96CF /* ScoreDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39AF25B3E06B009F96CF /* ScoreDTO.swift */; };
+		C46E39B025B3E06B009F96CF /* ScoreEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39AF25B3E06B009F96CF /* ScoreEntity.swift */; };
+		C46E39B525B4B0A6009F96CF /* ScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39B425B4B0A6009F96CF /* ScoreModel.swift */; };
 		C47A0A9725B1BF920068DC35 /* FintechApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47A0A9625B1BF920068DC35 /* FintechApp.swift */; };
 		C47A0A9925B1BF920068DC35 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47A0A9825B1BF920068DC35 /* DashboardView.swift */; };
 		C47A0A9B25B1BF930068DC35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C47A0A9A25B1BF930068DC35 /* Assets.xcassets */; };
@@ -26,14 +27,15 @@
 /* Begin PBXFileReference section */
 		C46E396E25B21A5D009F96CF /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		C46E398B25B3AF40009F96CF /* CircleProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressBar.swift; sourceTree = "<group>"; };
-		C46E398E25B3D626009F96CF /* ScoreEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreEntity.swift; sourceTree = "<group>"; };
+		C46E398E25B3D626009F96CF /* ScoreDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDTO.swift; sourceTree = "<group>"; };
 		C46E399125B3D713009F96CF /* FetchScoreUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchScoreUseCase.swift; sourceTree = "<group>"; };
 		C46E399625B3D864009F96CF /* FetchScoreUseCaseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchScoreUseCaseable.swift; sourceTree = "<group>"; };
 		C46E39A025B3D92E009F96CF /* ScoreRepositable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreRepositable.swift; sourceTree = "<group>"; };
 		C46E39A325B3DA42009F96CF /* ScoreRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreRepository.swift; sourceTree = "<group>"; };
 		C46E39A725B3DB0B009F96CF /* ScoreDataSourceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDataSourceable.swift; sourceTree = "<group>"; };
 		C46E39AB25B3DBCF009F96CF /* ScoreDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDataSource.swift; sourceTree = "<group>"; };
-		C46E39AF25B3E06B009F96CF /* ScoreDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDTO.swift; sourceTree = "<group>"; };
+		C46E39AF25B3E06B009F96CF /* ScoreEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreEntity.swift; sourceTree = "<group>"; };
+		C46E39B425B4B0A6009F96CF /* ScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreModel.swift; sourceTree = "<group>"; };
 		C47A0A9325B1BF920068DC35 /* Fintech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fintech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47A0A9625B1BF920068DC35 /* FintechApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FintechApp.swift; sourceTree = "<group>"; };
 		C47A0A9825B1BF920068DC35 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -72,7 +74,7 @@
 		C46E396925B21927009F96CF /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				C46E398E25B3D626009F96CF /* ScoreEntity.swift */,
+				C46E398E25B3D626009F96CF /* ScoreDTO.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -107,6 +109,7 @@
 			children = (
 				C46E397E25B26867009F96CF /* Views */,
 				C46E397F25B26870009F96CF /* ViewModels */,
+				C46E39B325B4B08C009F96CF /* Models */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -161,10 +164,18 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		C46E39AE25B3E031009F96CF /* Models */ = {
+		C46E39AE25B3E031009F96CF /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				C46E39AF25B3E06B009F96CF /* ScoreDTO.swift */,
+				C46E39AF25B3E06B009F96CF /* ScoreEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C46E39B325B4B08C009F96CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39B425B4B0A6009F96CF /* ScoreModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -212,7 +223,7 @@
 				C46E39A625B3DAEE009F96CF /* Protocols */,
 				C46E396825B2191A009F96CF /* DataSources */,
 				C46E396725B21912009F96CF /* Repositories */,
-				C46E39AE25B3E031009F96CF /* Models */,
+				C46E39AE25B3E031009F96CF /* Entities */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -343,10 +354,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C46E396F25B21A5D009F96CF /* DashboardViewModel.swift in Sources */,
+				C46E39B525B4B0A6009F96CF /* ScoreModel.swift in Sources */,
 				C47A0A9925B1BF920068DC35 /* DashboardView.swift in Sources */,
-				C46E398F25B3D626009F96CF /* ScoreEntity.swift in Sources */,
+				C46E398F25B3D626009F96CF /* ScoreDTO.swift in Sources */,
 				C46E399225B3D713009F96CF /* FetchScoreUseCase.swift in Sources */,
-				C46E39B025B3E06B009F96CF /* ScoreDTO.swift in Sources */,
+				C46E39B025B3E06B009F96CF /* ScoreEntity.swift in Sources */,
 				C46E39A425B3DA42009F96CF /* ScoreRepository.swift in Sources */,
 				C46E39A825B3DB0B009F96CF /* ScoreDataSourceable.swift in Sources */,
 				C46E398C25B3AF40009F96CF /* CircleProgressBar.swift in Sources */,

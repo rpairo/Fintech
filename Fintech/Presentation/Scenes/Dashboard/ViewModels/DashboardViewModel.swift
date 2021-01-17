@@ -9,9 +9,7 @@ import Foundation
 
 final class DashboardViewModel: ObservableObject {
     // MARK: Properties
-    @Published var score: Int = 0
-    @Published var scoreMax: Int = 0
-    @Published var scorePercent: Float = 0.0
+    @Published var score = ScoreModel()
 
     // MARK: UseCases
     let fetchScoreUseCase: FetchScoreUseCaseable
@@ -28,18 +26,21 @@ final class DashboardViewModel: ObservableObject {
             case .success(let score):
                 self.updateScore(score)
             case .failure(let error):
-                print(error.localizedDescription)
+                self.checkFetchScoreError(error)
             }
         }
     }
 
-    func updateScore(_ score: ScoreEntity) {
-        self.score = score.score
-        self.scoreMax = score.scoreMax
-        self.scorePercent = calculatePercent(value: score.score, maxValue: score.scoreMax)
+    func updateScore(_ score: ScoreDTO) {
+        self.score = ScoreModel(value: score.value, maxValue: score.maxValue)
     }
 
-    func calculatePercent(value: Int, maxValue: Int) -> Float {
-        Float(value) / Float(maxValue)
+    func checkFetchScoreError(_ error: FetchScoreError) {
+        switch error {
+        case .network:
+            break
+        case .unkown(let error):
+            break
+        }
     }
 }
