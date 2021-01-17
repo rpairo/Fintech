@@ -16,11 +16,19 @@ struct FintechApp: App {
         )
     )
 
+    let saveLogUseCase = SaveLogUseCase(
+        repository: LogRepository(
+            dataSource: LogDataSource()
+        )
+    )
+
+    // MARK: Scene
     var body: some Scene {
         WindowGroup {
             DashboardView(
                 viewModel: DashboardViewModel(
-                    fetchScoreUseCase: fetchScoreUseCase
+                    fetchScoreUseCase: fetchScoreUseCase,
+                    saveLogUseCase: saveLogUseCase
                 )
             )
         }

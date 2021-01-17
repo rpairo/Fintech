@@ -19,6 +19,13 @@
 		C46E39B025B3E06B009F96CF /* ScoreEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39AF25B3E06B009F96CF /* ScoreEntity.swift */; };
 		C46E39B525B4B0A6009F96CF /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39B425B4B0A6009F96CF /* Score.swift */; };
 		C46E39BD25B4BF0C009F96CF /* ScoreAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39BC25B4BF0C009F96CF /* ScoreAlert.swift */; };
+		C46E39C325B4D429009F96CF /* LogDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39C225B4D429009F96CF /* LogDTO.swift */; };
+		C46E39C625B4D479009F96CF /* SaveLogUseCaseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39C525B4D479009F96CF /* SaveLogUseCaseable.swift */; };
+		C46E39C925B4D4BD009F96CF /* LogRepositable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39C825B4D4BD009F96CF /* LogRepositable.swift */; };
+		C46E39D225B4D531009F96CF /* SaveLogUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39D125B4D531009F96CF /* SaveLogUseCase.swift */; };
+		C46E39D525B4D65F009F96CF /* LogRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39D425B4D65F009F96CF /* LogRepository.swift */; };
+		C46E39DC25B4D6C8009F96CF /* LogDataSourceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39DB25B4D6C8009F96CF /* LogDataSourceable.swift */; };
+		C46E39DF25B4E253009F96CF /* LogDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39DE25B4E253009F96CF /* LogDataSource.swift */; };
 		C47A0A9725B1BF920068DC35 /* FintechApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47A0A9625B1BF920068DC35 /* FintechApp.swift */; };
 		C47A0A9925B1BF920068DC35 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47A0A9825B1BF920068DC35 /* DashboardView.swift */; };
 		C47A0A9B25B1BF930068DC35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C47A0A9A25B1BF930068DC35 /* Assets.xcassets */; };
@@ -38,6 +45,13 @@
 		C46E39AF25B3E06B009F96CF /* ScoreEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreEntity.swift; sourceTree = "<group>"; };
 		C46E39B425B4B0A6009F96CF /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		C46E39BC25B4BF0C009F96CF /* ScoreAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreAlert.swift; sourceTree = "<group>"; };
+		C46E39C225B4D429009F96CF /* LogDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDTO.swift; sourceTree = "<group>"; };
+		C46E39C525B4D479009F96CF /* SaveLogUseCaseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLogUseCaseable.swift; sourceTree = "<group>"; };
+		C46E39C825B4D4BD009F96CF /* LogRepositable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogRepositable.swift; sourceTree = "<group>"; };
+		C46E39D125B4D531009F96CF /* SaveLogUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLogUseCase.swift; sourceTree = "<group>"; };
+		C46E39D425B4D65F009F96CF /* LogRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogRepository.swift; sourceTree = "<group>"; };
+		C46E39DB25B4D6C8009F96CF /* LogDataSourceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDataSourceable.swift; sourceTree = "<group>"; };
+		C46E39DE25B4E253009F96CF /* LogDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDataSource.swift; sourceTree = "<group>"; };
 		C47A0A9325B1BF920068DC35 /* Fintech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fintech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47A0A9625B1BF920068DC35 /* FintechApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FintechApp.swift; sourceTree = "<group>"; };
 		C47A0A9825B1BF920068DC35 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -61,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				C46E39A325B3DA42009F96CF /* ScoreRepository.swift */,
+				C46E39D425B4D65F009F96CF /* LogRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -69,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				C46E39AB25B3DBCF009F96CF /* ScoreDataSource.swift */,
+				C46E39DE25B4E253009F96CF /* LogDataSource.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -77,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				C46E398E25B3D626009F96CF /* ScoreDTO.swift */,
+				C46E39C225B4D429009F96CF /* LogDTO.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -84,7 +101,8 @@
 		C46E396B25B2193E009F96CF /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				C46E399125B3D713009F96CF /* FetchScoreUseCase.swift */,
+				C46E39CF25B4D512009F96CF /* Score */,
+				C46E39D025B4D51F009F96CF /* Log */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -145,7 +163,8 @@
 		C46E399525B3D855009F96CF /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				C46E399625B3D864009F96CF /* FetchScoreUseCaseable.swift */,
+				C46E39CB25B4D4DC009F96CF /* Score */,
+				C46E39CC25B4D4E3009F96CF /* Log */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -153,7 +172,8 @@
 		C46E399B25B3D8C2009F96CF /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				C46E39A025B3D92E009F96CF /* ScoreRepositable.swift */,
+				C46E39CD25B4D4EF009F96CF /* Score */,
+				C46E39CE25B4D4F5009F96CF /* Log */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -162,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				C46E39A725B3DB0B009F96CF /* ScoreDataSourceable.swift */,
+				C46E39DB25B4D6C8009F96CF /* LogDataSourceable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -181,6 +202,54 @@
 				C46E39BC25B4BF0C009F96CF /* ScoreAlert.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C46E39CB25B4D4DC009F96CF /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				C46E399625B3D864009F96CF /* FetchScoreUseCaseable.swift */,
+			);
+			path = Score;
+			sourceTree = "<group>";
+		};
+		C46E39CC25B4D4E3009F96CF /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39C525B4D479009F96CF /* SaveLogUseCaseable.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		C46E39CD25B4D4EF009F96CF /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39A025B3D92E009F96CF /* ScoreRepositable.swift */,
+			);
+			path = Score;
+			sourceTree = "<group>";
+		};
+		C46E39CE25B4D4F5009F96CF /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39C825B4D4BD009F96CF /* LogRepositable.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		C46E39CF25B4D512009F96CF /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				C46E399125B3D713009F96CF /* FetchScoreUseCase.swift */,
+			);
+			path = Score;
+			sourceTree = "<group>";
+		};
+		C46E39D025B4D51F009F96CF /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39D125B4D531009F96CF /* SaveLogUseCase.swift */,
+			);
+			path = Log;
 			sourceTree = "<group>";
 		};
 		C47A0A8A25B1BF920068DC35 = {
@@ -356,18 +425,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C46E39D525B4D65F009F96CF /* LogRepository.swift in Sources */,
 				C46E396F25B21A5D009F96CF /* DashboardViewModel.swift in Sources */,
+				C46E39D225B4D531009F96CF /* SaveLogUseCase.swift in Sources */,
+				C46E39C625B4D479009F96CF /* SaveLogUseCaseable.swift in Sources */,
 				C46E39B525B4B0A6009F96CF /* Score.swift in Sources */,
 				C47A0A9925B1BF920068DC35 /* DashboardView.swift in Sources */,
 				C46E398F25B3D626009F96CF /* ScoreDTO.swift in Sources */,
 				C46E399225B3D713009F96CF /* FetchScoreUseCase.swift in Sources */,
+				C46E39C325B4D429009F96CF /* LogDTO.swift in Sources */,
 				C46E39B025B3E06B009F96CF /* ScoreEntity.swift in Sources */,
 				C46E39A425B3DA42009F96CF /* ScoreRepository.swift in Sources */,
 				C46E39A825B3DB0B009F96CF /* ScoreDataSourceable.swift in Sources */,
+				C46E39DF25B4E253009F96CF /* LogDataSource.swift in Sources */,
 				C46E398C25B3AF40009F96CF /* CircleProgressBar.swift in Sources */,
 				C47A0A9725B1BF920068DC35 /* FintechApp.swift in Sources */,
 				C46E399725B3D864009F96CF /* FetchScoreUseCaseable.swift in Sources */,
+				C46E39DC25B4D6C8009F96CF /* LogDataSourceable.swift in Sources */,
 				C46E39AC25B3DBCF009F96CF /* ScoreDataSource.swift in Sources */,
+				C46E39C925B4D4BD009F96CF /* LogRepositable.swift in Sources */,
 				C46E39A125B3D92E009F96CF /* ScoreRepositable.swift in Sources */,
 				C46E39BD25B4BF0C009F96CF /* ScoreAlert.swift in Sources */,
 			);

@@ -14,10 +14,12 @@ final class DashboardViewModel: ObservableObject {
 
     // MARK: UseCases
     let fetchScoreUseCase: FetchScoreUseCaseable
+    let saveLogUseCase: SaveLogUseCaseable
 
     // MARK: Constructors
-    init(fetchScoreUseCase: FetchScoreUseCaseable) {
+    init(fetchScoreUseCase: FetchScoreUseCaseable, saveLogUseCase: SaveLogUseCaseable) {
         self.fetchScoreUseCase = fetchScoreUseCase
+        self.saveLogUseCase = saveLogUseCase
     }
 
     // MARK: Functionallity
