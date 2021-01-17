@@ -15,7 +15,7 @@ struct DashboardView: View {
     var body: some View {
         NavigationView {
             VStack {
-                CircleProgressBar(score: $viewModel.score)
+                CircleProgressBar(score: $viewModel.score, loading: $viewModel.loading)
                     .frame(width: 300.0, height: 300.0)
                     .padding(40.0)
             }.onAppear {

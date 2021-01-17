@@ -10,12 +10,19 @@ import SwiftUI
 struct CircleProgressBar: View {
     // MARK: Properties
     @Binding var score: Score
+    @Binding var loading: Bool
 
     // MARK: View
     var body: some View {
         ZStack {
             ProgressBar(percent: $score.percent)
-            ScoreText(value: $score.value, maxValue: $score.maxValue)
+            if loading {
+                ProgressView("Loading")
+                    .progressViewStyle(CircularProgressViewStyle(tint: .orange))
+                    .foregroundColor(.black)
+            } else {
+                ScoreText(value: $score.value, maxValue: $score.maxValue)
+            }
         }
     }
 }

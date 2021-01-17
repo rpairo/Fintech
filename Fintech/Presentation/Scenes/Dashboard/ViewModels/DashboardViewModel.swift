@@ -11,6 +11,7 @@ final class DashboardViewModel: ObservableObject {
     // MARK: Properties
     @Published var score = Score()
     @Published var scoreError = ScoreAlert()
+    @Published var loading = true
 
     // MARK: UseCases
     let fetchScoreUseCase: FetchScoreUseCaseable
@@ -29,6 +30,7 @@ extension DashboardViewModel {
         fetchScoreUseCase.execute { result in
             switch result {
             case .success(let score):
+                self.loading = false
                 self.updateScore(score)
                 self.saveScoreLog(score)
             case .failure(let error):
