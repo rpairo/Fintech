@@ -30,14 +30,14 @@ private struct ProgressBar: View {
             Circle()
                 .stroke(lineWidth: 20.0)
                 .opacity(0.3)
-                .foregroundColor(Color.yellow)
+                .foregroundColor(.yellow)
 
             Circle()
                 .trim(from: 0.0, to: CGFloat(min(percent, 1.0)))
                 .stroke(style: StrokeStyle(lineWidth: 20.0, lineCap: .round, lineJoin: .round))
-                .foregroundColor(Color.orange)
+                .foregroundColor(.orange)
                 .rotationEffect(Angle(degrees: 270.0))
-                .animation(.linear(duration: 0.8))
+                .animation(.spring(response: 0.8, dampingFraction: 1.0, blendDuration: 1.0))
         }
     }
 }
