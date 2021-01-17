@@ -13,7 +13,16 @@ struct DashboardView: View {
 
     // MARK: View
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            CircleProgressBar(
+                score: $viewModel.score,
+                scoreMax: $viewModel.scoreMax,
+                scorePercent: $viewModel.scorePercent
+            )
+            .frame(width: 300.0, height: 300.0)
+            .padding(40.0)
+        }.onAppear {
+            viewModel.updateScore()
+        }
     }
 }
