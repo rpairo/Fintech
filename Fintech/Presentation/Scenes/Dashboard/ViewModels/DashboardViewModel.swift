@@ -9,7 +9,8 @@ import Foundation
 
 final class DashboardViewModel: ObservableObject {
     // MARK: Properties
-    @Published var score = ScoreModel()
+    @Published var score = Score()
+    @Published var scoreError = ScoreAlert()
 
     // MARK: UseCases
     let fetchScoreUseCase: FetchScoreUseCaseable
@@ -32,15 +33,31 @@ final class DashboardViewModel: ObservableObject {
     }
 
     func updateScore(_ score: ScoreDTO) {
-        self.score = ScoreModel(value: score.value, maxValue: score.maxValue)
+        self.score = Score(value: score.value, maxValue: score.maxValue)
     }
 
     func checkFetchScoreError(_ error: FetchScoreError) {
         switch error {
         case .network:
-            break
+            createScoreAlert(
+                show: true,
+                title: "Network error",
+                description: "An error has occurred with the network. Check your data connection."
+            )
         case .unkown(let error):
-            break
+            createScoreAlert(
+                show: true,
+                title: "Error",
+                description: error.localizedDescription
+            )
         }
+    }
+
+    func createScoreAlert(show: Bool, title: String, description: String) {
+        scoreError = ScoreAlert(
+            showing: show,
+            title: title,
+            description: description
+        )
     }
 }

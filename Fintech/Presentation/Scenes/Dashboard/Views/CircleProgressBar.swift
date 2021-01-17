@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CircleProgressBar: View {
     // MARK: Properties
-    @Binding var score: ScoreModel
+    @Binding var score: Score
 
     // MARK: View
     var body: some View {

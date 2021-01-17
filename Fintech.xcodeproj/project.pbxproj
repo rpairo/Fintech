@@ -17,7 +17,8 @@
 		C46E39A825B3DB0B009F96CF /* ScoreDataSourceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39A725B3DB0B009F96CF /* ScoreDataSourceable.swift */; };
 		C46E39AC25B3DBCF009F96CF /* ScoreDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39AB25B3DBCF009F96CF /* ScoreDataSource.swift */; };
 		C46E39B025B3E06B009F96CF /* ScoreEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39AF25B3E06B009F96CF /* ScoreEntity.swift */; };
-		C46E39B525B4B0A6009F96CF /* ScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39B425B4B0A6009F96CF /* ScoreModel.swift */; };
+		C46E39B525B4B0A6009F96CF /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39B425B4B0A6009F96CF /* Score.swift */; };
+		C46E39BD25B4BF0C009F96CF /* ScoreAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39BC25B4BF0C009F96CF /* ScoreAlert.swift */; };
 		C47A0A9725B1BF920068DC35 /* FintechApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47A0A9625B1BF920068DC35 /* FintechApp.swift */; };
 		C47A0A9925B1BF920068DC35 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47A0A9825B1BF920068DC35 /* DashboardView.swift */; };
 		C47A0A9B25B1BF930068DC35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C47A0A9A25B1BF930068DC35 /* Assets.xcassets */; };
@@ -35,7 +36,8 @@
 		C46E39A725B3DB0B009F96CF /* ScoreDataSourceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDataSourceable.swift; sourceTree = "<group>"; };
 		C46E39AB25B3DBCF009F96CF /* ScoreDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDataSource.swift; sourceTree = "<group>"; };
 		C46E39AF25B3E06B009F96CF /* ScoreEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreEntity.swift; sourceTree = "<group>"; };
-		C46E39B425B4B0A6009F96CF /* ScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreModel.swift; sourceTree = "<group>"; };
+		C46E39B425B4B0A6009F96CF /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		C46E39BC25B4BF0C009F96CF /* ScoreAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreAlert.swift; sourceTree = "<group>"; };
 		C47A0A9325B1BF920068DC35 /* Fintech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fintech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47A0A9625B1BF920068DC35 /* FintechApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FintechApp.swift; sourceTree = "<group>"; };
 		C47A0A9825B1BF920068DC35 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -175,7 +177,8 @@
 		C46E39B325B4B08C009F96CF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C46E39B425B4B0A6009F96CF /* ScoreModel.swift */,
+				C46E39B425B4B0A6009F96CF /* Score.swift */,
+				C46E39BC25B4BF0C009F96CF /* ScoreAlert.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -354,7 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C46E396F25B21A5D009F96CF /* DashboardViewModel.swift in Sources */,
-				C46E39B525B4B0A6009F96CF /* ScoreModel.swift in Sources */,
+				C46E39B525B4B0A6009F96CF /* Score.swift in Sources */,
 				C47A0A9925B1BF920068DC35 /* DashboardView.swift in Sources */,
 				C46E398F25B3D626009F96CF /* ScoreDTO.swift in Sources */,
 				C46E399225B3D713009F96CF /* FetchScoreUseCase.swift in Sources */,
@@ -366,6 +369,7 @@
 				C46E399725B3D864009F96CF /* FetchScoreUseCaseable.swift in Sources */,
 				C46E39AC25B3DBCF009F96CF /* ScoreDataSource.swift in Sources */,
 				C46E39A125B3D92E009F96CF /* ScoreRepositable.swift in Sources */,
+				C46E39BD25B4BF0C009F96CF /* ScoreAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

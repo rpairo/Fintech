@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ScoreModel {
+struct Score {
     // MARK: Properties
     var value: Int
     var maxValue: Int
