@@ -25,12 +25,17 @@ struct FintechApp: App {
     // MARK: Scene
     var body: some Scene {
         WindowGroup {
-            DashboardView(
-                viewModel: DashboardViewModel(
-                    fetchScoreUseCase: fetchScoreUseCase,
-                    saveLogUseCase: saveLogUseCase
-                )
-            )
+            TabView {
+                DashboardView(
+                    viewModel: DashboardViewModel(
+                        fetchScoreUseCase: fetchScoreUseCase,
+                        saveLogUseCase: saveLogUseCase
+                    )
+                ).tabItem {
+                    Text("Dashboard")
+                    Image(systemName: "house.fill")
+                }
+            }
         }
     }
 }
