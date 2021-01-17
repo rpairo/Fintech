@@ -22,7 +22,7 @@ struct DashboardView: View {
             .frame(width: 300.0, height: 300.0)
             .padding(40.0)
         }.onAppear {
-            viewModel.updateScore()
+            viewModel.fetchScore()
         }
     }
 }

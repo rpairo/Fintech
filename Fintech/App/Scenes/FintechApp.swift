@@ -9,9 +9,20 @@ import SwiftUI
 
 @main
 struct FintechApp: App {
+    // MARK: Use Cases
+    let fetchScoreUseCase = FetchScoreUseCase(
+        repository: ScoreRepository(
+            dataSource: ScoreDataSource()
+        )
+    )
+
     var body: some Scene {
         WindowGroup {
-            DashboardView(viewModel: DashboardViewModel())
+            DashboardView(
+                viewModel: DashboardViewModel(
+                    fetchScoreUseCase: fetchScoreUseCase
+                )
+            )
         }
     }
 }
