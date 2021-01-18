@@ -4,7 +4,7 @@ Portfolio application created to pass the selection process. This challenge is a
 
 | Dashboard | Profile |
 |--------------|---------------|
-| ![Dashboard](https://user-images.githubusercontent.com/14141324/104884226-50ad4100-5966-11eb-9646-6e3aa65bb9ca.gif) | ![Profile](https://user-images.githubusercontent.com/14141324/104879488-38d1bf00-595e-11eb-9765-e17af8d21dde.PNG)|
+| ![Dashboard](https://user-images.githubusercontent.com/14141324/104885215-f614e480-5967-11eb-893a-9afaabc9b5eb.gif) | ![Profile](https://user-images.githubusercontent.com/14141324/104879488-38d1bf00-595e-11eb-9765-e17af8d21dde.PNG)|
 
 
 ## Architecture
