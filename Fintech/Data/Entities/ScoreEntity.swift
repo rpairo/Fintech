@@ -9,11 +9,11 @@ import Foundation
 
 struct ScoreEntity: Decodable {
     // MARK: Properties
-    let value: Int
-    let minValue: Int
-    let maxValue: Int
-    let status: String
-    let client: String
+    let value: Int?
+    let minValue: Int?
+    let maxValue: Int?
+    let status: String?
+    let client: String?
 
     // MARK: Keys
     enum CodingKeys: String, CodingKey {
@@ -22,18 +22,23 @@ struct ScoreEntity: Decodable {
         case scoreMax = "maxScoreValue"
         case status = "accountIDVStatus"
         case client = "clientRef"
-        case report = "creditReportInfo"
+        case credit = "creditReportInfo"
     }
 
     // MARK: Constructor
     init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        status = try container.decode(String.self, forKey: .status)
+        let container = try? decoder.container(keyedBy: CodingKeys.self)
+        status = try? container?.decode(String.self, forKey: .status)
 
-        let report = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .report)
-        value = try report.decode(Int.self, forKey: .score)
-        minValue = try report.decode(Int.self, forKey: .scoreMin)
-        maxValue = try report.decode(Int.self, forKey: .scoreMax)
-        client = try report.decode(String.self, forKey: .client)
+        let credit = try? container?.nestedContainer(keyedBy: CodingKeys.self, forKey: .credit)
+        value = try? credit?.decode(Int.self, forKey: .score)
+        minValue = try? credit?.decode(Int.self, forKey: .scoreMin)
+        maxValue = try? credit?.decode(Int.self, forKey: .scoreMax)
+        client = try? credit?.decode(String.self, forKey: .client)
+    }
+
+    // MARK: Functionality
+    func transformToEntity() -> ScoreDTO {
+        ScoreDTO(value: value, maxValue: maxValue)
     }
 }

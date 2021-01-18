@@ -9,6 +9,6 @@ import Foundation
 
 struct ScoreDTO {
     // MARK: Properties
-    let value: Int
-    let maxValue: Int
+    let value: Int?
+    let maxValue: Int?
 }

@@ -26,6 +26,19 @@
 		C46E39D525B4D65F009F96CF /* LogRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39D425B4D65F009F96CF /* LogRepository.swift */; };
 		C46E39DC25B4D6C8009F96CF /* LogDataSourceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39DB25B4D6C8009F96CF /* LogDataSourceable.swift */; };
 		C46E39DF25B4E253009F96CF /* LogDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39DE25B4E253009F96CF /* LogDataSource.swift */; };
+		C46E39E525B505A7009F96CF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39E425B505A7009F96CF /* ProfileView.swift */; };
+		C46E39EF25B518AE009F96CF /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39EE25B518AE009F96CF /* ProfileViewModel.swift */; };
+		C46E39F425B519ED009F96CF /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39F325B519ED009F96CF /* Report.swift */; };
+		C46E39F925B52807009F96CF /* ReportDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39F825B52807009F96CF /* ReportDTO.swift */; };
+		C46E39FD25B52ADF009F96CF /* FetchReportUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39FC25B52ADF009F96CF /* FetchReportUseCase.swift */; };
+		C46E3A0225B52B0F009F96CF /* FetchReportUseCaseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E3A0125B52B0F009F96CF /* FetchReportUseCaseable.swift */; };
+		C46E3A0725B52BCD009F96CF /* ReportRepositable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E3A0625B52BCD009F96CF /* ReportRepositable.swift */; };
+		C46E3A0C25B52C2F009F96CF /* ReportRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E3A0B25B52C2F009F96CF /* ReportRepository.swift */; };
+		C46E3A0F25B52C6A009F96CF /* ReportDataSourceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E3A0E25B52C6A009F96CF /* ReportDataSourceable.swift */; };
+		C46E3A1225B52CA5009F96CF /* ReportEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E3A1125B52CA5009F96CF /* ReportEntity.swift */; };
+		C46E3A1525B52F11009F96CF /* ReportDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E3A1425B52F11009F96CF /* ReportDataSource.swift */; };
+		C46E3A1825B539F2009F96CF /* ReportAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E3A1725B539F2009F96CF /* ReportAlert.swift */; };
+		C46E3A1B25B554DF009F96CF /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E3A1A25B554DF009F96CF /* ReportView.swift */; };
 		C47A0A9725B1BF920068DC35 /* FintechApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47A0A9625B1BF920068DC35 /* FintechApp.swift */; };
 		C47A0A9925B1BF920068DC35 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47A0A9825B1BF920068DC35 /* DashboardView.swift */; };
 		C47A0A9B25B1BF930068DC35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C47A0A9A25B1BF930068DC35 /* Assets.xcassets */; };
@@ -52,6 +65,19 @@
 		C46E39D425B4D65F009F96CF /* LogRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogRepository.swift; sourceTree = "<group>"; };
 		C46E39DB25B4D6C8009F96CF /* LogDataSourceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDataSourceable.swift; sourceTree = "<group>"; };
 		C46E39DE25B4E253009F96CF /* LogDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDataSource.swift; sourceTree = "<group>"; };
+		C46E39E425B505A7009F96CF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C46E39EE25B518AE009F96CF /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		C46E39F325B519ED009F96CF /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		C46E39F825B52807009F96CF /* ReportDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDTO.swift; sourceTree = "<group>"; };
+		C46E39FC25B52ADF009F96CF /* FetchReportUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchReportUseCase.swift; sourceTree = "<group>"; };
+		C46E3A0125B52B0F009F96CF /* FetchReportUseCaseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchReportUseCaseable.swift; sourceTree = "<group>"; };
+		C46E3A0625B52BCD009F96CF /* ReportRepositable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportRepositable.swift; sourceTree = "<group>"; };
+		C46E3A0B25B52C2F009F96CF /* ReportRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportRepository.swift; sourceTree = "<group>"; };
+		C46E3A0E25B52C6A009F96CF /* ReportDataSourceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDataSourceable.swift; sourceTree = "<group>"; };
+		C46E3A1125B52CA5009F96CF /* ReportEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportEntity.swift; sourceTree = "<group>"; };
+		C46E3A1425B52F11009F96CF /* ReportDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDataSource.swift; sourceTree = "<group>"; };
+		C46E3A1725B539F2009F96CF /* ReportAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportAlert.swift; sourceTree = "<group>"; };
+		C46E3A1A25B554DF009F96CF /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
 		C47A0A9325B1BF920068DC35 /* Fintech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fintech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47A0A9625B1BF920068DC35 /* FintechApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FintechApp.swift; sourceTree = "<group>"; };
 		C47A0A9825B1BF920068DC35 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -76,6 +102,7 @@
 			children = (
 				C46E39A325B3DA42009F96CF /* ScoreRepository.swift */,
 				C46E39D425B4D65F009F96CF /* LogRepository.swift */,
+				C46E3A0B25B52C2F009F96CF /* ReportRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -85,6 +112,7 @@
 			children = (
 				C46E39AB25B3DBCF009F96CF /* ScoreDataSource.swift */,
 				C46E39DE25B4E253009F96CF /* LogDataSource.swift */,
+				C46E3A1425B52F11009F96CF /* ReportDataSource.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -94,6 +122,7 @@
 			children = (
 				C46E398E25B3D626009F96CF /* ScoreDTO.swift */,
 				C46E39C225B4D429009F96CF /* LogDTO.swift */,
+				C46E39F825B52807009F96CF /* ReportDTO.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -103,6 +132,7 @@
 			children = (
 				C46E39CF25B4D512009F96CF /* Score */,
 				C46E39D025B4D51F009F96CF /* Log */,
+				C46E39FB25B52AAE009F96CF /* Report */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -119,6 +149,7 @@
 		C46E397C25B26858009F96CF /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C46E39E225B5058B009F96CF /* Profile */,
 				C46E397D25B2685E009F96CF /* Dashboard */,
 			);
 			path = Scenes;
@@ -165,6 +196,7 @@
 			children = (
 				C46E39CB25B4D4DC009F96CF /* Score */,
 				C46E39CC25B4D4E3009F96CF /* Log */,
+				C46E3A0025B52AF5009F96CF /* Report */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -174,6 +206,7 @@
 			children = (
 				C46E39CD25B4D4EF009F96CF /* Score */,
 				C46E39CE25B4D4F5009F96CF /* Log */,
+				C46E3A0525B52BBE009F96CF /* Report */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -183,6 +216,7 @@
 			children = (
 				C46E39A725B3DB0B009F96CF /* ScoreDataSourceable.swift */,
 				C46E39DB25B4D6C8009F96CF /* LogDataSourceable.swift */,
+				C46E3A0E25B52C6A009F96CF /* ReportDataSourceable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -191,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				C46E39AF25B3E06B009F96CF /* ScoreEntity.swift */,
+				C46E3A1125B52CA5009F96CF /* ReportEntity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -250,6 +285,66 @@
 				C46E39D125B4D531009F96CF /* SaveLogUseCase.swift */,
 			);
 			path = Log;
+			sourceTree = "<group>";
+		};
+		C46E39E225B5058B009F96CF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39E325B50594009F96CF /* Views */,
+				C46E39E825B51782009F96CF /* ViewModels */,
+				C46E39ED25B5186B009F96CF /* Models */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		C46E39E325B50594009F96CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39E425B505A7009F96CF /* ProfileView.swift */,
+				C46E3A1A25B554DF009F96CF /* ReportView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C46E39E825B51782009F96CF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39EE25B518AE009F96CF /* ProfileViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C46E39ED25B5186B009F96CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39F325B519ED009F96CF /* Report.swift */,
+				C46E3A1725B539F2009F96CF /* ReportAlert.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C46E39FB25B52AAE009F96CF /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39FC25B52ADF009F96CF /* FetchReportUseCase.swift */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		C46E3A0025B52AF5009F96CF /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				C46E3A0125B52B0F009F96CF /* FetchReportUseCaseable.swift */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		C46E3A0525B52BBE009F96CF /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				C46E3A0625B52BCD009F96CF /* ReportRepositable.swift */,
+			);
+			path = Report;
 			sourceTree = "<group>";
 		};
 		C47A0A8A25B1BF920068DC35 = {
@@ -425,10 +520,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C46E39F925B52807009F96CF /* ReportDTO.swift in Sources */,
 				C46E39D525B4D65F009F96CF /* LogRepository.swift in Sources */,
 				C46E396F25B21A5D009F96CF /* DashboardViewModel.swift in Sources */,
 				C46E39D225B4D531009F96CF /* SaveLogUseCase.swift in Sources */,
 				C46E39C625B4D479009F96CF /* SaveLogUseCaseable.swift in Sources */,
+				C46E3A0225B52B0F009F96CF /* FetchReportUseCaseable.swift in Sources */,
+				C46E3A1225B52CA5009F96CF /* ReportEntity.swift in Sources */,
 				C46E39B525B4B0A6009F96CF /* Score.swift in Sources */,
 				C47A0A9925B1BF920068DC35 /* DashboardView.swift in Sources */,
 				C46E398F25B3D626009F96CF /* ScoreDTO.swift in Sources */,
@@ -436,15 +534,25 @@
 				C46E39C325B4D429009F96CF /* LogDTO.swift in Sources */,
 				C46E39B025B3E06B009F96CF /* ScoreEntity.swift in Sources */,
 				C46E39A425B3DA42009F96CF /* ScoreRepository.swift in Sources */,
+				C46E39F425B519ED009F96CF /* Report.swift in Sources */,
 				C46E39A825B3DB0B009F96CF /* ScoreDataSourceable.swift in Sources */,
 				C46E39DF25B4E253009F96CF /* LogDataSource.swift in Sources */,
+				C46E3A0725B52BCD009F96CF /* ReportRepositable.swift in Sources */,
 				C46E398C25B3AF40009F96CF /* CircleProgressBar.swift in Sources */,
 				C47A0A9725B1BF920068DC35 /* FintechApp.swift in Sources */,
+				C46E39EF25B518AE009F96CF /* ProfileViewModel.swift in Sources */,
+				C46E39FD25B52ADF009F96CF /* FetchReportUseCase.swift in Sources */,
 				C46E399725B3D864009F96CF /* FetchScoreUseCaseable.swift in Sources */,
 				C46E39DC25B4D6C8009F96CF /* LogDataSourceable.swift in Sources */,
+				C46E3A1B25B554DF009F96CF /* ReportView.swift in Sources */,
+				C46E3A1525B52F11009F96CF /* ReportDataSource.swift in Sources */,
 				C46E39AC25B3DBCF009F96CF /* ScoreDataSource.swift in Sources */,
+				C46E3A0C25B52C2F009F96CF /* ReportRepository.swift in Sources */,
+				C46E3A1825B539F2009F96CF /* ReportAlert.swift in Sources */,
 				C46E39C925B4D4BD009F96CF /* LogRepositable.swift in Sources */,
 				C46E39A125B3D92E009F96CF /* ScoreRepositable.swift in Sources */,
+				C46E39E525B505A7009F96CF /* ProfileView.swift in Sources */,
+				C46E3A0F25B52C6A009F96CF /* ReportDataSourceable.swift in Sources */,
 				C46E39BD25B4BF0C009F96CF /* ScoreAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

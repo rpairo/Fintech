@@ -15,19 +15,19 @@ struct DashboardView: View {
     var body: some View {
         NavigationView {
             VStack {
-                CircleProgressBar(score: $viewModel.score, loading: $viewModel.loading)
+                CircleProgressBar(score: $viewModel.score, isLoading: $viewModel.isLoading)
                     .frame(width: 300.0, height: 300.0)
                     .padding(40.0)
             }.onAppear {
                 viewModel.fetchScore()
             }
 
-            .alert(isPresented: $viewModel.scoreError.isShowing) { () -> Alert in
+            .alert(isPresented: $viewModel.alert.isShowing) { () -> Alert in
                 let button = Alert.Button.destructive(Text("OK"))
 
                 let alert = Alert(
-                    title: Text(viewModel.scoreError.title),
-                    message: Text(viewModel.scoreError.description),
+                    title: Text(viewModel.alert.title),
+                    message: Text(viewModel.alert.description),
                     dismissButton: button
                 )
 

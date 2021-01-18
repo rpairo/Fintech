@@ -1,51 +1,51 @@
 //
-//  DashboardViewModel.swift
+//  ProfileViewModel.swift
 //  Fintech
 //
-//  Created by Raúl Pera Pairó on 15/1/21.
+//  Created by Raúl Pera Pairó on 18/1/21.
 //
 
 import Foundation
 
-final class DashboardViewModel: ObservableObject {
+class ProfileViewModel: ObservableObject {
     // MARK: Properties
-    @Published var score = Score()
-    @Published var alert = ScoreAlert()
+    @Published var report = Report()
+    @Published var alert = ReportAlert()
     @Published var isLoading = true
 
     // MARK: UseCases
-    let fetchScoreUseCase: FetchScoreUseCaseable
+    let fetchReportUseCase: FetchReportUseCaseable
     let saveLogUseCase: SaveLogUseCaseable
 
     // MARK: Constructors
-    init(fetchScoreUseCase: FetchScoreUseCaseable, saveLogUseCase: SaveLogUseCaseable) {
-        self.fetchScoreUseCase = fetchScoreUseCase
+    init(fetchReportUseCase: FetchReportUseCaseable, saveLogUseCase: SaveLogUseCaseable) {
+        self.fetchReportUseCase = fetchReportUseCase
         self.saveLogUseCase = saveLogUseCase
     }
 }
 
-// MARK: Score functionality
-extension DashboardViewModel {
-    func fetchScore() {
-        fetchScoreUseCase.execute { result in
+// MARK: Report functionality
+extension ProfileViewModel {
+    func fetchReport() {
+        fetchReportUseCase.execute { result in
             switch result {
-            case .success(let score):
+            case .success(let report):
                 self.isLoading = false
-                self.updateScore(score)
-                self.saveScoreLog(score)
+                self.updateReport(report)
+                self.saveReportLog(report)
             case .failure(let error):
                 self.isLoading = false
-                self.checkFetchScoreError(error)
+                self.checkFetchReportError(error)
                 self.saveErrorLog(error)
             }
         }
     }
 
-    func updateScore(_ score: ScoreDTO) {
-        self.score = Score(entity: score)
+    func updateReport(_ report: ReportDTO) {
+        self.report = Report(entity: report)
     }
 
-    func checkFetchScoreError(_ error: FetchScoreError) {
+    func checkFetchReportError(_ error: FetchReportError) {
         switch error {
         case .network:
             createScoreAlert(
@@ -63,7 +63,7 @@ extension DashboardViewModel {
     }
 
     func createScoreAlert(show: Bool, title: String, description: String) {
-        alert = ScoreAlert(
+        alert = ReportAlert(
             showing: show,
             title: title,
             description: description
@@ -72,13 +72,13 @@ extension DashboardViewModel {
 }
 
 // MARK: Log functionality
-extension DashboardViewModel {
-    func saveScoreLog(_ score: ScoreDTO) {
-        guard let value = score.value, let maxValue = score.maxValue else { return }
+extension ProfileViewModel {
+    func saveReportLog(_ report: ReportDTO) {
+        guard let client = report.client else { return }
 
         let log = LogDTO(
             type: .info,
-            description: "A score of \(value) out of \(maxValue) has been fetched"
+            description: "Report of client \(client) has been fetched."
         )
 
         saveLogUseCase.execute(log)

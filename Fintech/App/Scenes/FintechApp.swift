@@ -22,6 +22,12 @@ struct FintechApp: App {
         )
     )
 
+    let fetchReportUseCase = FetchReportUseCase(
+        repository: ReportRepository(
+            dataSource: ReportDataSource()
+        )
+    )
+
     // MARK: Scene
     var body: some Scene {
         WindowGroup {
@@ -33,9 +39,19 @@ struct FintechApp: App {
                     )
                 ).tabItem {
                     Text("Dashboard")
-                    Image(systemName: "house.fill")
+                    Image(systemName: "gauge")
                 }
-            }
+
+                ProfileView(
+                    viewModel: ProfileViewModel(
+                        fetchReportUseCase: fetchReportUseCase,
+                        saveLogUseCase: saveLogUseCase
+                    )
+                ).tabItem {
+                    Text("Profile")
+                    Image(systemName: "person.crop.circle.fill")
+                }
+            }.accentColor(.orange)
         }
     }
 }
