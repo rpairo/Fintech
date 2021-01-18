@@ -78,6 +78,7 @@
 		C46E3A1425B52F11009F96CF /* ReportDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDataSource.swift; sourceTree = "<group>"; };
 		C46E3A1725B539F2009F96CF /* ReportAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportAlert.swift; sourceTree = "<group>"; };
 		C46E3A1A25B554DF009F96CF /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
+		C46E3A1D25B55CA0009F96CF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C47A0A9325B1BF920068DC35 /* Fintech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fintech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47A0A9625B1BF920068DC35 /* FintechApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FintechApp.swift; sourceTree = "<group>"; };
 		C47A0A9825B1BF920068DC35 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -350,6 +351,7 @@
 		C47A0A8A25B1BF920068DC35 = {
 			isa = PBXGroup;
 			children = (
+				C46E3A1D25B55CA0009F96CF /* README.md */,
 				C47A0A9525B1BF920068DC35 /* Fintech */,
 				C47A0A9425B1BF920068DC35 /* Products */,
 			);
