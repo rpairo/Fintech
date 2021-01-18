@@ -7,16 +7,81 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C46E396F25B21A5D009F96CF /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E396E25B21A5D009F96CF /* DashboardViewModel.swift */; };
+		C46E398C25B3AF40009F96CF /* CircleProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E398B25B3AF40009F96CF /* CircleProgressBar.swift */; };
+		C46E398F25B3D626009F96CF /* ScoreDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E398E25B3D626009F96CF /* ScoreDTO.swift */; };
+		C46E399225B3D713009F96CF /* FetchScoreUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E399125B3D713009F96CF /* FetchScoreUseCase.swift */; };
+		C46E399725B3D864009F96CF /* FetchScoreUseCaseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E399625B3D864009F96CF /* FetchScoreUseCaseable.swift */; };
+		C46E39A125B3D92E009F96CF /* ScoreRepositable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39A025B3D92E009F96CF /* ScoreRepositable.swift */; };
+		C46E39A425B3DA42009F96CF /* ScoreRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39A325B3DA42009F96CF /* ScoreRepository.swift */; };
+		C46E39A825B3DB0B009F96CF /* ScoreDataSourceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39A725B3DB0B009F96CF /* ScoreDataSourceable.swift */; };
+		C46E39AC25B3DBCF009F96CF /* ScoreDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39AB25B3DBCF009F96CF /* ScoreDataSource.swift */; };
+		C46E39B025B3E06B009F96CF /* ScoreEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39AF25B3E06B009F96CF /* ScoreEntity.swift */; };
+		C46E39B525B4B0A6009F96CF /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39B425B4B0A6009F96CF /* Score.swift */; };
+		C46E39BD25B4BF0C009F96CF /* ScoreAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39BC25B4BF0C009F96CF /* ScoreAlert.swift */; };
+		C46E39C325B4D429009F96CF /* LogDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39C225B4D429009F96CF /* LogDTO.swift */; };
+		C46E39C625B4D479009F96CF /* SaveLogUseCaseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39C525B4D479009F96CF /* SaveLogUseCaseable.swift */; };
+		C46E39C925B4D4BD009F96CF /* LogRepositable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39C825B4D4BD009F96CF /* LogRepositable.swift */; };
+		C46E39D225B4D531009F96CF /* SaveLogUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39D125B4D531009F96CF /* SaveLogUseCase.swift */; };
+		C46E39D525B4D65F009F96CF /* LogRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39D425B4D65F009F96CF /* LogRepository.swift */; };
+		C46E39DC25B4D6C8009F96CF /* LogDataSourceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39DB25B4D6C8009F96CF /* LogDataSourceable.swift */; };
+		C46E39DF25B4E253009F96CF /* LogDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39DE25B4E253009F96CF /* LogDataSource.swift */; };
+		C46E39E525B505A7009F96CF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39E425B505A7009F96CF /* ProfileView.swift */; };
+		C46E39EF25B518AE009F96CF /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39EE25B518AE009F96CF /* ProfileViewModel.swift */; };
+		C46E39F425B519ED009F96CF /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39F325B519ED009F96CF /* Report.swift */; };
+		C46E39F925B52807009F96CF /* ReportDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39F825B52807009F96CF /* ReportDTO.swift */; };
+		C46E39FD25B52ADF009F96CF /* FetchReportUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E39FC25B52ADF009F96CF /* FetchReportUseCase.swift */; };
+		C46E3A0225B52B0F009F96CF /* FetchReportUseCaseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E3A0125B52B0F009F96CF /* FetchReportUseCaseable.swift */; };
+		C46E3A0725B52BCD009F96CF /* ReportRepositable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E3A0625B52BCD009F96CF /* ReportRepositable.swift */; };
+		C46E3A0C25B52C2F009F96CF /* ReportRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E3A0B25B52C2F009F96CF /* ReportRepository.swift */; };
+		C46E3A0F25B52C6A009F96CF /* ReportDataSourceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E3A0E25B52C6A009F96CF /* ReportDataSourceable.swift */; };
+		C46E3A1225B52CA5009F96CF /* ReportEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E3A1125B52CA5009F96CF /* ReportEntity.swift */; };
+		C46E3A1525B52F11009F96CF /* ReportDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E3A1425B52F11009F96CF /* ReportDataSource.swift */; };
+		C46E3A1825B539F2009F96CF /* ReportAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E3A1725B539F2009F96CF /* ReportAlert.swift */; };
+		C46E3A1B25B554DF009F96CF /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E3A1A25B554DF009F96CF /* ReportView.swift */; };
 		C47A0A9725B1BF920068DC35 /* FintechApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47A0A9625B1BF920068DC35 /* FintechApp.swift */; };
-		C47A0A9925B1BF920068DC35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47A0A9825B1BF920068DC35 /* ContentView.swift */; };
+		C47A0A9925B1BF920068DC35 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47A0A9825B1BF920068DC35 /* DashboardView.swift */; };
 		C47A0A9B25B1BF930068DC35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C47A0A9A25B1BF930068DC35 /* Assets.xcassets */; };
 		C47A0A9E25B1BF930068DC35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C47A0A9D25B1BF930068DC35 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C46E396E25B21A5D009F96CF /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		C46E398B25B3AF40009F96CF /* CircleProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressBar.swift; sourceTree = "<group>"; };
+		C46E398E25B3D626009F96CF /* ScoreDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDTO.swift; sourceTree = "<group>"; };
+		C46E399125B3D713009F96CF /* FetchScoreUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchScoreUseCase.swift; sourceTree = "<group>"; };
+		C46E399625B3D864009F96CF /* FetchScoreUseCaseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchScoreUseCaseable.swift; sourceTree = "<group>"; };
+		C46E39A025B3D92E009F96CF /* ScoreRepositable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreRepositable.swift; sourceTree = "<group>"; };
+		C46E39A325B3DA42009F96CF /* ScoreRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreRepository.swift; sourceTree = "<group>"; };
+		C46E39A725B3DB0B009F96CF /* ScoreDataSourceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDataSourceable.swift; sourceTree = "<group>"; };
+		C46E39AB25B3DBCF009F96CF /* ScoreDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDataSource.swift; sourceTree = "<group>"; };
+		C46E39AF25B3E06B009F96CF /* ScoreEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreEntity.swift; sourceTree = "<group>"; };
+		C46E39B425B4B0A6009F96CF /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		C46E39BC25B4BF0C009F96CF /* ScoreAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreAlert.swift; sourceTree = "<group>"; };
+		C46E39C225B4D429009F96CF /* LogDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDTO.swift; sourceTree = "<group>"; };
+		C46E39C525B4D479009F96CF /* SaveLogUseCaseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLogUseCaseable.swift; sourceTree = "<group>"; };
+		C46E39C825B4D4BD009F96CF /* LogRepositable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogRepositable.swift; sourceTree = "<group>"; };
+		C46E39D125B4D531009F96CF /* SaveLogUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLogUseCase.swift; sourceTree = "<group>"; };
+		C46E39D425B4D65F009F96CF /* LogRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogRepository.swift; sourceTree = "<group>"; };
+		C46E39DB25B4D6C8009F96CF /* LogDataSourceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDataSourceable.swift; sourceTree = "<group>"; };
+		C46E39DE25B4E253009F96CF /* LogDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDataSource.swift; sourceTree = "<group>"; };
+		C46E39E425B505A7009F96CF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C46E39EE25B518AE009F96CF /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		C46E39F325B519ED009F96CF /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		C46E39F825B52807009F96CF /* ReportDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDTO.swift; sourceTree = "<group>"; };
+		C46E39FC25B52ADF009F96CF /* FetchReportUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchReportUseCase.swift; sourceTree = "<group>"; };
+		C46E3A0125B52B0F009F96CF /* FetchReportUseCaseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchReportUseCaseable.swift; sourceTree = "<group>"; };
+		C46E3A0625B52BCD009F96CF /* ReportRepositable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportRepositable.swift; sourceTree = "<group>"; };
+		C46E3A0B25B52C2F009F96CF /* ReportRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportRepository.swift; sourceTree = "<group>"; };
+		C46E3A0E25B52C6A009F96CF /* ReportDataSourceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDataSourceable.swift; sourceTree = "<group>"; };
+		C46E3A1125B52CA5009F96CF /* ReportEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportEntity.swift; sourceTree = "<group>"; };
+		C46E3A1425B52F11009F96CF /* ReportDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportDataSource.swift; sourceTree = "<group>"; };
+		C46E3A1725B539F2009F96CF /* ReportAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportAlert.swift; sourceTree = "<group>"; };
+		C46E3A1A25B554DF009F96CF /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
+		C46E3A1D25B55CA0009F96CF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C47A0A9325B1BF920068DC35 /* Fintech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fintech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47A0A9625B1BF920068DC35 /* FintechApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FintechApp.swift; sourceTree = "<group>"; };
-		C47A0A9825B1BF920068DC35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C47A0A9825B1BF920068DC35 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		C47A0A9A25B1BF930068DC35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C47A0A9D25B1BF930068DC35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C47A0A9F25B1BF930068DC35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,9 +98,260 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C46E396725B21912009F96CF /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39A325B3DA42009F96CF /* ScoreRepository.swift */,
+				C46E39D425B4D65F009F96CF /* LogRepository.swift */,
+				C46E3A0B25B52C2F009F96CF /* ReportRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C46E396825B2191A009F96CF /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39AB25B3DBCF009F96CF /* ScoreDataSource.swift */,
+				C46E39DE25B4E253009F96CF /* LogDataSource.swift */,
+				C46E3A1425B52F11009F96CF /* ReportDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		C46E396925B21927009F96CF /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C46E398E25B3D626009F96CF /* ScoreDTO.swift */,
+				C46E39C225B4D429009F96CF /* LogDTO.swift */,
+				C46E39F825B52807009F96CF /* ReportDTO.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C46E396B25B2193E009F96CF /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39CF25B4D512009F96CF /* Score */,
+				C46E39D025B4D51F009F96CF /* Log */,
+				C46E39FB25B52AAE009F96CF /* Report */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		C46E397925B21BA2009F96CF /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C46E397C25B26858009F96CF /* Scenes */,
+				C47A0AAD25B1C1B00068DC35 /* Assets */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C46E397C25B26858009F96CF /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39E225B5058B009F96CF /* Profile */,
+				C46E397D25B2685E009F96CF /* Dashboard */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		C46E397D25B2685E009F96CF /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				C46E397E25B26867009F96CF /* Views */,
+				C46E397F25B26870009F96CF /* ViewModels */,
+				C46E39B325B4B08C009F96CF /* Models */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		C46E397E25B26867009F96CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C47A0A9825B1BF920068DC35 /* DashboardView.swift */,
+				C46E398B25B3AF40009F96CF /* CircleProgressBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C46E397F25B26870009F96CF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C46E396E25B21A5D009F96CF /* DashboardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C46E399425B3D84F009F96CF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C46E399525B3D855009F96CF /* UseCases */,
+				C46E399B25B3D8C2009F96CF /* Repositories */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C46E399525B3D855009F96CF /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39CB25B4D4DC009F96CF /* Score */,
+				C46E39CC25B4D4E3009F96CF /* Log */,
+				C46E3A0025B52AF5009F96CF /* Report */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		C46E399B25B3D8C2009F96CF /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39CD25B4D4EF009F96CF /* Score */,
+				C46E39CE25B4D4F5009F96CF /* Log */,
+				C46E3A0525B52BBE009F96CF /* Report */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C46E39A625B3DAEE009F96CF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39A725B3DB0B009F96CF /* ScoreDataSourceable.swift */,
+				C46E39DB25B4D6C8009F96CF /* LogDataSourceable.swift */,
+				C46E3A0E25B52C6A009F96CF /* ReportDataSourceable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C46E39AE25B3E031009F96CF /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39AF25B3E06B009F96CF /* ScoreEntity.swift */,
+				C46E3A1125B52CA5009F96CF /* ReportEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C46E39B325B4B08C009F96CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39B425B4B0A6009F96CF /* Score.swift */,
+				C46E39BC25B4BF0C009F96CF /* ScoreAlert.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C46E39CB25B4D4DC009F96CF /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				C46E399625B3D864009F96CF /* FetchScoreUseCaseable.swift */,
+			);
+			path = Score;
+			sourceTree = "<group>";
+		};
+		C46E39CC25B4D4E3009F96CF /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39C525B4D479009F96CF /* SaveLogUseCaseable.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		C46E39CD25B4D4EF009F96CF /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39A025B3D92E009F96CF /* ScoreRepositable.swift */,
+			);
+			path = Score;
+			sourceTree = "<group>";
+		};
+		C46E39CE25B4D4F5009F96CF /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39C825B4D4BD009F96CF /* LogRepositable.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		C46E39CF25B4D512009F96CF /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				C46E399125B3D713009F96CF /* FetchScoreUseCase.swift */,
+			);
+			path = Score;
+			sourceTree = "<group>";
+		};
+		C46E39D025B4D51F009F96CF /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39D125B4D531009F96CF /* SaveLogUseCase.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		C46E39E225B5058B009F96CF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39E325B50594009F96CF /* Views */,
+				C46E39E825B51782009F96CF /* ViewModels */,
+				C46E39ED25B5186B009F96CF /* Models */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		C46E39E325B50594009F96CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39E425B505A7009F96CF /* ProfileView.swift */,
+				C46E3A1A25B554DF009F96CF /* ReportView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C46E39E825B51782009F96CF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39EE25B518AE009F96CF /* ProfileViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C46E39ED25B5186B009F96CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39F325B519ED009F96CF /* Report.swift */,
+				C46E3A1725B539F2009F96CF /* ReportAlert.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C46E39FB25B52AAE009F96CF /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39FC25B52ADF009F96CF /* FetchReportUseCase.swift */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		C46E3A0025B52AF5009F96CF /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				C46E3A0125B52B0F009F96CF /* FetchReportUseCaseable.swift */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		C46E3A0525B52BBE009F96CF /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				C46E3A0625B52BCD009F96CF /* ReportRepositable.swift */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
 		C47A0A8A25B1BF920068DC35 = {
 			isa = PBXGroup;
 			children = (
+				C46E3A1D25B55CA0009F96CF /* README.md */,
 				C47A0A9525B1BF920068DC35 /* Fintech */,
 				C47A0A9425B1BF920068DC35 /* Products */,
 			);
@@ -52,21 +368,67 @@
 		C47A0A9525B1BF920068DC35 /* Fintech */ = {
 			isa = PBXGroup;
 			children = (
-				C47A0A9625B1BF920068DC35 /* FintechApp.swift */,
-				C47A0A9825B1BF920068DC35 /* ContentView.swift */,
-				C47A0A9A25B1BF930068DC35 /* Assets.xcassets */,
-				C47A0A9F25B1BF930068DC35 /* Info.plist */,
-				C47A0A9C25B1BF930068DC35 /* Preview Content */,
+				C47A0AAB25B1C19A0068DC35 /* App */,
+				C46E397925B21BA2009F96CF /* Presentation */,
+				C47A0AA725B1C1630068DC35 /* Domain */,
+				C47A0AA825B1C1680068DC35 /* Data */,
 			);
 			path = Fintech;
 			sourceTree = "<group>";
 		};
-		C47A0A9C25B1BF930068DC35 /* Preview Content */ = {
+		C47A0AA725B1C1630068DC35 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C46E399425B3D84F009F96CF /* Protocols */,
+				C46E396B25B2193E009F96CF /* UseCases */,
+				C46E396925B21927009F96CF /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C47A0AA825B1C1680068DC35 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C46E39A625B3DAEE009F96CF /* Protocols */,
+				C46E396825B2191A009F96CF /* DataSources */,
+				C46E396725B21912009F96CF /* Repositories */,
+				C46E39AE25B3E031009F96CF /* Entities */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C47A0AAB25B1C19A0068DC35 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C47A0AB525B1C2480068DC35 /* Configuration */,
+				C47A0AB425B1C2440068DC35 /* Scenes */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C47A0AAD25B1C1B00068DC35 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
 				C47A0A9D25B1BF930068DC35 /* Preview Assets.xcassets */,
+				C47A0A9A25B1BF930068DC35 /* Assets.xcassets */,
 			);
-			path = "Preview Content";
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C47A0AB425B1C2440068DC35 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C47A0A9625B1BF920068DC35 /* FintechApp.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		C47A0AB525B1C2480068DC35 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				C47A0A9F25B1BF930068DC35 /* Info.plist */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,6 +441,7 @@
 				C47A0A8F25B1BF920068DC35 /* Sources */,
 				C47A0A9025B1BF920068DC35 /* Frameworks */,
 				C47A0A9125B1BF920068DC35 /* Resources */,
+				C46E398925B3A341009F96CF /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -133,13 +496,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C46E398925B3A341009F96CF /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C47A0A8F25B1BF920068DC35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C47A0A9925B1BF920068DC35 /* ContentView.swift in Sources */,
+				C46E39F925B52807009F96CF /* ReportDTO.swift in Sources */,
+				C46E39D525B4D65F009F96CF /* LogRepository.swift in Sources */,
+				C46E396F25B21A5D009F96CF /* DashboardViewModel.swift in Sources */,
+				C46E39D225B4D531009F96CF /* SaveLogUseCase.swift in Sources */,
+				C46E39C625B4D479009F96CF /* SaveLogUseCaseable.swift in Sources */,
+				C46E3A0225B52B0F009F96CF /* FetchReportUseCaseable.swift in Sources */,
+				C46E3A1225B52CA5009F96CF /* ReportEntity.swift in Sources */,
+				C46E39B525B4B0A6009F96CF /* Score.swift in Sources */,
+				C47A0A9925B1BF920068DC35 /* DashboardView.swift in Sources */,
+				C46E398F25B3D626009F96CF /* ScoreDTO.swift in Sources */,
+				C46E399225B3D713009F96CF /* FetchScoreUseCase.swift in Sources */,
+				C46E39C325B4D429009F96CF /* LogDTO.swift in Sources */,
+				C46E39B025B3E06B009F96CF /* ScoreEntity.swift in Sources */,
+				C46E39A425B3DA42009F96CF /* ScoreRepository.swift in Sources */,
+				C46E39F425B519ED009F96CF /* Report.swift in Sources */,
+				C46E39A825B3DB0B009F96CF /* ScoreDataSourceable.swift in Sources */,
+				C46E39DF25B4E253009F96CF /* LogDataSource.swift in Sources */,
+				C46E3A0725B52BCD009F96CF /* ReportRepositable.swift in Sources */,
+				C46E398C25B3AF40009F96CF /* CircleProgressBar.swift in Sources */,
 				C47A0A9725B1BF920068DC35 /* FintechApp.swift in Sources */,
+				C46E39EF25B518AE009F96CF /* ProfileViewModel.swift in Sources */,
+				C46E39FD25B52ADF009F96CF /* FetchReportUseCase.swift in Sources */,
+				C46E399725B3D864009F96CF /* FetchScoreUseCaseable.swift in Sources */,
+				C46E39DC25B4D6C8009F96CF /* LogDataSourceable.swift in Sources */,
+				C46E3A1B25B554DF009F96CF /* ReportView.swift in Sources */,
+				C46E3A1525B52F11009F96CF /* ReportDataSource.swift in Sources */,
+				C46E39AC25B3DBCF009F96CF /* ScoreDataSource.swift in Sources */,
+				C46E3A0C25B52C2F009F96CF /* ReportRepository.swift in Sources */,
+				C46E3A1825B539F2009F96CF /* ReportAlert.swift in Sources */,
+				C46E39C925B4D4BD009F96CF /* LogRepositable.swift in Sources */,
+				C46E39A125B3D92E009F96CF /* ScoreRepositable.swift in Sources */,
+				C46E39E525B505A7009F96CF /* ProfileView.swift in Sources */,
+				C46E3A0F25B52C6A009F96CF /* ReportDataSourceable.swift in Sources */,
+				C46E39BD25B4BF0C009F96CF /* ScoreAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,10 +684,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Fintech/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Fintech/Presentation/Assets\"";
 				DEVELOPMENT_TEAM = W2HFS492D7;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Fintech/Info.plist;
+				INFOPLIST_FILE = Fintech/App/Configuration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,10 +706,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Fintech/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Fintech/Presentation/Assets\"";
 				DEVELOPMENT_TEAM = W2HFS492D7;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Fintech/Info.plist;
+				INFOPLIST_FILE = Fintech/App/Configuration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
