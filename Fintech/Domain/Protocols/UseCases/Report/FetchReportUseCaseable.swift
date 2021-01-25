@@ -13,6 +13,19 @@ enum FetchReportError: Error {
     case unkown(Error)
 }
 
+extension FetchReportError: Equatable {
+    static func == (lhs: FetchReportError, rhs: FetchReportError) -> Bool {
+        switch (lhs, rhs) {
+        case (.network, .network):
+            return true
+        case (.unkown, .unkown):
+            return true
+        default:
+            return false
+        }
+    }
+}
+
 // MARK: Result
 typealias FetchReportResult = (Result<ReportDTO, FetchReportError>) -> Void
 

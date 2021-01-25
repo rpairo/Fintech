@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ReportEntity: Decodable {
+struct ReportEntity {
     // MARK: Properties
     // Account
     let idvStatus: String?
@@ -49,6 +49,66 @@ struct ReportEntity: Decodable {
     // Persona
     let personaType: String?
 
+    // MARK: Constructors
+    init() {
+        idvStatus = ""
+        client = ""
+        score = 0
+        maxScore = 0
+        status = ""
+        creditUsed = 0
+        nextReport = 0
+        band = 0
+        bandDescription = ""
+        defaulted = false
+        sinceDefaulted = 0
+        delinquent = false
+        sinceDelinquent = 0
+        shortDebtAmount = 0
+        shortDebtNonPromotional = 0
+        shortDebtLimit = 0
+        shortDebtUsed = 0
+        longDebtAmount = 0
+        longDebtNonPromotional = 0
+        longDebtLimit = 0
+        longDebtUsed = 0
+        positiveFactors = 0
+        negativeFactors = 0
+        personaType = ""
+    }
+
+    // MARK: Functionality
+    func transformToEntity() -> ReportDTO {
+        ReportDTO(
+            idvStatus: idvStatus,
+            client: client,
+            score: score,
+            maxScore: maxScore,
+            status: status,
+            creditUsed: creditUsed,
+            nextReport: nextReport,
+            band: band,
+            bandDescription: bandDescription,
+            defaulted: defaulted,
+            sinceDefaulted: sinceDefaulted,
+            delinquent: delinquent,
+            sinceDelinquent: sinceDelinquent,
+            shortDebtAmount: shortDebtAmount,
+            shortDebtNonPromotional: shortDebtNonPromotional,
+            shortDebtLimit: shortDebtLimit,
+            shortDebtUsed: shortDebtUsed,
+            longDebtAmount: longDebtAmount,
+            longDebtNonPromotional: longDebtNonPromotional,
+            longDebtLimit: longDebtLimit,
+            longDebtUsed: longDebtUsed,
+            positiveFactors: positiveFactors,
+            negativeFactors: negativeFactors,
+            personaType: personaType
+        )
+    }
+}
+
+extension ReportEntity: Decodable {
     // MARK: Keys
     enum CodingKeys: String, CodingKey {
         case idvStatus = "accountIDVStatus"
@@ -107,35 +167,5 @@ struct ReportEntity: Decodable {
         longDebtUsed = try? credit?.decode(Int.self, forKey: .longDebtUsed)
         positiveFactors = try? credit?.decode(Int.self, forKey: .positiveFactors)
         negativeFactors = try? credit?.decode(Int.self, forKey: .negativeFactors)
-    }
-
-    // MARK: Functionality
-    func transformToEntity() -> ReportDTO {
-        ReportDTO(
-            idvStatus: idvStatus,
-            client: client,
-            score: score,
-            maxScore: maxScore,
-            status: status,
-            creditUsed: creditUsed,
-            nextReport: nextReport,
-            band: band,
-            bandDescription: bandDescription,
-            defaulted: defaulted,
-            sinceDefaulted: sinceDefaulted,
-            delinquent: delinquent,
-            sinceDelinquent: sinceDelinquent,
-            shortDebtAmount: shortDebtAmount,
-            shortDebtNonPromotional: shortDebtNonPromotional,
-            shortDebtLimit: shortDebtLimit,
-            shortDebtUsed: shortDebtUsed,
-            longDebtAmount: longDebtAmount,
-            longDebtNonPromotional: longDebtNonPromotional,
-            longDebtLimit: longDebtLimit,
-            longDebtUsed: longDebtUsed,
-            positiveFactors: positiveFactors,
-            negativeFactors: negativeFactors,
-            personaType: personaType
-        )
     }
 }

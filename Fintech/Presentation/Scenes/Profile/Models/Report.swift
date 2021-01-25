@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Report {
+struct Report: Equatable {
     // MARK: Properties
     var currency = Locale.current.currencySymbol ?? "£"
 
