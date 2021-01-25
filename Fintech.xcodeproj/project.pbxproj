@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C41524B025BE0C0E00C88406 /* FetchReportUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41524AF25BE0C0E00C88406 /* FetchReportUseCaseTest.swift */; };
+		C41524B425BE0C6100C88406 /* MockReportRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41524B325BE0C6100C88406 /* MockReportRepository.swift */; };
 		C46E396F25B21A5D009F96CF /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E396E25B21A5D009F96CF /* DashboardViewModel.swift */; };
 		C46E398C25B3AF40009F96CF /* CircleProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E398B25B3AF40009F96CF /* CircleProgressBar.swift */; };
 		C46E398F25B3D626009F96CF /* ScoreDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E398E25B3D626009F96CF /* ScoreDTO.swift */; };
@@ -39,13 +41,31 @@
 		C46E3A1525B52F11009F96CF /* ReportDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E3A1425B52F11009F96CF /* ReportDataSource.swift */; };
 		C46E3A1825B539F2009F96CF /* ReportAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E3A1725B539F2009F96CF /* ReportAlert.swift */; };
 		C46E3A1B25B554DF009F96CF /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E3A1A25B554DF009F96CF /* ReportView.swift */; };
+		C46E3A4E25B5823A009F96CF /* MockScoreRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E3A4D25B5823A009F96CF /* MockScoreRepository.swift */; };
 		C47A0A9725B1BF920068DC35 /* FintechApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47A0A9625B1BF920068DC35 /* FintechApp.swift */; };
 		C47A0A9925B1BF920068DC35 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47A0A9825B1BF920068DC35 /* DashboardView.swift */; };
 		C47A0A9B25B1BF930068DC35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C47A0A9A25B1BF930068DC35 /* Assets.xcassets */; };
 		C47A0A9E25B1BF930068DC35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C47A0A9D25B1BF930068DC35 /* Preview Assets.xcassets */; };
+		C4B07BDB25BE3699001271AF /* ReportFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B07BDA25BE3699001271AF /* ReportFactory.swift */; };
+		C4B07BE225BE38A1001271AF /* ScoreFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B07BE125BE38A1001271AF /* ScoreFactory.swift */; };
+		C4B07BEB25BE3CFE001271AF /* ScoreRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B07BEA25BE3CFE001271AF /* ScoreRepositoryTest.swift */; };
+		C4B07C1B25BE49CF001271AF /* MockScoreDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B07C1A25BE49CF001271AF /* MockScoreDataSource.swift */; };
+		C4DFEAA225B5C0400026037D /* FetchScoreUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DFEAA125B5C0400026037D /* FetchScoreUseCaseTest.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C46E3A2A25B577B5009F96CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C47A0A8B25B1BF920068DC35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C47A0A9225B1BF920068DC35;
+			remoteInfo = Fintech;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		C41524AF25BE0C0E00C88406 /* FetchReportUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchReportUseCaseTest.swift; sourceTree = "<group>"; };
+		C41524B325BE0C6100C88406 /* MockReportRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockReportRepository.swift; sourceTree = "<group>"; };
 		C46E396E25B21A5D009F96CF /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		C46E398B25B3AF40009F96CF /* CircleProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressBar.swift; sourceTree = "<group>"; };
 		C46E398E25B3D626009F96CF /* ScoreDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDTO.swift; sourceTree = "<group>"; };
@@ -79,15 +99,30 @@
 		C46E3A1725B539F2009F96CF /* ReportAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportAlert.swift; sourceTree = "<group>"; };
 		C46E3A1A25B554DF009F96CF /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
 		C46E3A1D25B55CA0009F96CF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C46E3A2525B577B5009F96CF /* FintechTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FintechTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C46E3A2925B577B5009F96CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C46E3A4D25B5823A009F96CF /* MockScoreRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockScoreRepository.swift; sourceTree = "<group>"; };
 		C47A0A9325B1BF920068DC35 /* Fintech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fintech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C47A0A9625B1BF920068DC35 /* FintechApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FintechApp.swift; sourceTree = "<group>"; };
 		C47A0A9825B1BF920068DC35 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		C47A0A9A25B1BF930068DC35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C47A0A9D25B1BF930068DC35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C47A0A9F25B1BF930068DC35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4B07BDA25BE3699001271AF /* ReportFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportFactory.swift; sourceTree = "<group>"; };
+		C4B07BE125BE38A1001271AF /* ScoreFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreFactory.swift; sourceTree = "<group>"; };
+		C4B07BEA25BE3CFE001271AF /* ScoreRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreRepositoryTest.swift; sourceTree = "<group>"; };
+		C4B07C1A25BE49CF001271AF /* MockScoreDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockScoreDataSource.swift; sourceTree = "<group>"; };
+		C4DFEAA125B5C0400026037D /* FetchScoreUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchScoreUseCaseTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C46E3A2225B577B5009F96CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C47A0A9025B1BF920068DC35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -98,6 +133,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C453C02925BDF70400C17321 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C453C02C25BDF72A00C17321 /* Configuration */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C453C02C25BDF72A00C17321 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				C46E3A2925B577B5009F96CF /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
 		C46E396725B21912009F96CF /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
@@ -348,11 +399,59 @@
 			path = Report;
 			sourceTree = "<group>";
 		};
+		C46E3A2625B577B5009F96CF /* FintechTests */ = {
+			isa = PBXGroup;
+			children = (
+				C453C02925BDF70400C17321 /* App */,
+				C46E3A4B25B58215009F96CF /* Mocks */,
+				C46E3A3425B57A48009F96CF /* Domain */,
+				C4B07BE825BE3967001271AF /* Data */,
+			);
+			path = FintechTests;
+			sourceTree = "<group>";
+		};
+		C46E3A3425B57A48009F96CF /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C46E3A3525B57A59009F96CF /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C46E3A3525B57A59009F96CF /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				C4DFEAA125B5C0400026037D /* FetchScoreUseCaseTest.swift */,
+				C41524AF25BE0C0E00C88406 /* FetchReportUseCaseTest.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		C46E3A4B25B58215009F96CF /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				C4B07BCE25BE2E62001271AF /* Factories */,
+				C4B07C1925BE49B6001271AF /* DataSources */,
+				C46E3A4C25B5821F009F96CF /* Repositories */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		C46E3A4C25B5821F009F96CF /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C46E3A4D25B5823A009F96CF /* MockScoreRepository.swift */,
+				C41524B325BE0C6100C88406 /* MockReportRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		C47A0A8A25B1BF920068DC35 = {
 			isa = PBXGroup;
 			children = (
 				C46E3A1D25B55CA0009F96CF /* README.md */,
 				C47A0A9525B1BF920068DC35 /* Fintech */,
+				C46E3A2625B577B5009F96CF /* FintechTests */,
 				C47A0A9425B1BF920068DC35 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -361,6 +460,7 @@
 			isa = PBXGroup;
 			children = (
 				C47A0A9325B1BF920068DC35 /* Fintech.app */,
+				C46E3A2525B577B5009F96CF /* FintechTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -431,9 +531,60 @@
 			path = Configuration;
 			sourceTree = "<group>";
 		};
+		C4B07BCE25BE2E62001271AF /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				C4B07BDA25BE3699001271AF /* ReportFactory.swift */,
+				C4B07BE125BE38A1001271AF /* ScoreFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		C4B07BE825BE3967001271AF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C4B07BE925BE3C8E001271AF /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C4B07BE925BE3C8E001271AF /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C4B07BEA25BE3CFE001271AF /* ScoreRepositoryTest.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C4B07C1925BE49B6001271AF /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				C4B07C1A25BE49CF001271AF /* MockScoreDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C46E3A2425B577B5009F96CF /* FintechTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C46E3A2E25B577B5009F96CF /* Build configuration list for PBXNativeTarget "FintechTests" */;
+			buildPhases = (
+				C46E3A2125B577B5009F96CF /* Sources */,
+				C46E3A2225B577B5009F96CF /* Frameworks */,
+				C46E3A2325B577B5009F96CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C46E3A2B25B577B5009F96CF /* PBXTargetDependency */,
+			);
+			name = FintechTests;
+			productName = FintechTests;
+			productReference = C46E3A2525B577B5009F96CF /* FintechTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C47A0A9225B1BF920068DC35 /* Fintech */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C47A0AA225B1BF930068DC35 /* Build configuration list for PBXNativeTarget "Fintech" */;
@@ -461,6 +612,10 @@
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					C46E3A2425B577B5009F96CF = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = C47A0A9225B1BF920068DC35;
+					};
 					C47A0A9225B1BF920068DC35 = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -480,11 +635,19 @@
 			projectRoot = "";
 			targets = (
 				C47A0A9225B1BF920068DC35 /* Fintech */,
+				C46E3A2425B577B5009F96CF /* FintechTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C46E3A2325B577B5009F96CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C47A0A9125B1BF920068DC35 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -518,6 +681,21 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C46E3A2125B577B5009F96CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4B07BEB25BE3CFE001271AF /* ScoreRepositoryTest.swift in Sources */,
+				C4B07BE225BE38A1001271AF /* ScoreFactory.swift in Sources */,
+				C46E3A4E25B5823A009F96CF /* MockScoreRepository.swift in Sources */,
+				C4DFEAA225B5C0400026037D /* FetchScoreUseCaseTest.swift in Sources */,
+				C41524B025BE0C0E00C88406 /* FetchReportUseCaseTest.swift in Sources */,
+				C4B07C1B25BE49CF001271AF /* MockScoreDataSource.swift in Sources */,
+				C4B07BDB25BE3699001271AF /* ReportFactory.swift in Sources */,
+				C41524B425BE0C6100C88406 /* MockReportRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C47A0A8F25B1BF920068DC35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -561,7 +739,55 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C46E3A2B25B577B5009F96CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C47A0A9225B1BF920068DC35 /* Fintech */;
+			targetProxy = C46E3A2A25B577B5009F96CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		C46E3A2C25B577B5009F96CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2HFS492D7;
+				INFOPLIST_FILE = FintechTests/App/Configuration/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpairo.FintechTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fintech.app/Fintech";
+			};
+			name = Debug;
+		};
+		C46E3A2D25B577B5009F96CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W2HFS492D7;
+				INFOPLIST_FILE = FintechTests/App/Configuration/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rpairo.FintechTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fintech.app/Fintech";
+			};
+			name = Release;
+		};
 		C47A0AA025B1BF930068DC35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -725,6 +951,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C46E3A2E25B577B5009F96CF /* Build configuration list for PBXNativeTarget "FintechTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C46E3A2C25B577B5009F96CF /* Debug */,
+				C46E3A2D25B577B5009F96CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C47A0A8E25B1BF920068DC35 /* Build configuration list for PBXProject "Fintech" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

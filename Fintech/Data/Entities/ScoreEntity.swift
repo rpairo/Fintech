@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ScoreEntity: Decodable {
+struct ScoreEntity {
     // MARK: Properties
     let value: Int?
     let minValue: Int?
@@ -15,6 +15,22 @@ struct ScoreEntity: Decodable {
     let status: String?
     let client: String?
 
+    // MARK: Constructors
+    init() {
+        value = 0
+        minValue = 0
+        maxValue = 0
+        status = ""
+        client = ""
+    }
+
+    // MARK: Functionality
+    func transformToEntity() -> ScoreDTO {
+        ScoreDTO(value: value, maxValue: maxValue)
+    }
+}
+
+extension ScoreEntity: Decodable {
     // MARK: Keys
     enum CodingKeys: String, CodingKey {
         case score
@@ -35,10 +51,5 @@ struct ScoreEntity: Decodable {
         minValue = try? credit?.decode(Int.self, forKey: .scoreMin)
         maxValue = try? credit?.decode(Int.self, forKey: .scoreMax)
         client = try? credit?.decode(String.self, forKey: .client)
-    }
-
-    // MARK: Functionality
-    func transformToEntity() -> ScoreDTO {
-        ScoreDTO(value: value, maxValue: maxValue)
     }
 }

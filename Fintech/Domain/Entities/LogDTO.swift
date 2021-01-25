@@ -13,6 +13,7 @@ enum LogType {
 }
 
 struct LogDTO {
+    // MARK: Properties
     let type: LogType
     let description: String
 }
