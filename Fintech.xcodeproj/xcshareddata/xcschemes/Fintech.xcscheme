@@ -39,6 +39,16 @@
                ReferencedContainer = "container:Fintech.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C4B07C5F25BE8680001271AF"
+               BuildableName = "FintechUITests.xctest"
+               BlueprintName = "FintechUITests"
+               ReferencedContainer = "container:Fintech.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

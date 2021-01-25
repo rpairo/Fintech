@@ -137,6 +137,7 @@ struct ReportView: View {
         Section(header: Text("Account")) {
             if let status = report.idvStatus {
                 Row(name: "IDV Status", value: "\(status)")
+                    .accessibilityIdentifier("accountStatus")
             }
         }
     }

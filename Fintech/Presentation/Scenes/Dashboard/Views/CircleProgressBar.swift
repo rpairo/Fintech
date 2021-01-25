@@ -59,15 +59,18 @@ private struct ScoreText: View {
         VStack {
             Text("Your credit score is")
                 .font(.title2)
+                .accessibility(identifier: "scoreTopText")
 
             Text("\(value ?? 0)")
                 .font(.largeTitle)
                 .foregroundColor(.yellow)
                 .fontWeight(.light)
                 .padding(5)
+                .accessibility(identifier: "scoreMiddleText")
 
             Text("out of \(maxValue ?? 0)")
                 .font(.title2)
+                .accessibility(identifier: "scoreBottomText")
         }
     }
 }
