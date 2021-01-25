@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C41524B025BE0C0E00C88406 /* FetchReportUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41524AF25BE0C0E00C88406 /* FetchReportUseCaseTests.swift */; };
 		C41524B425BE0C6100C88406 /* MockReportRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41524B325BE0C6100C88406 /* MockReportRepository.swift */; };
+		C468649A25BEAAB1007173C5 /* ProfileViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C468649925BEAAB1007173C5 /* ProfileViewUITests.swift */; };
 		C46E396F25B21A5D009F96CF /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E396E25B21A5D009F96CF /* DashboardViewModel.swift */; };
 		C46E398C25B3AF40009F96CF /* CircleProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E398B25B3AF40009F96CF /* CircleProgressBar.swift */; };
 		C46E398F25B3D626009F96CF /* ScoreDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46E398E25B3D626009F96CF /* ScoreDTO.swift */; };
@@ -83,6 +84,7 @@
 /* Begin PBXFileReference section */
 		C41524AF25BE0C0E00C88406 /* FetchReportUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchReportUseCaseTests.swift; sourceTree = "<group>"; };
 		C41524B325BE0C6100C88406 /* MockReportRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockReportRepository.swift; sourceTree = "<group>"; };
+		C468649925BEAAB1007173C5 /* ProfileViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewUITests.swift; sourceTree = "<group>"; };
 		C46E396E25B21A5D009F96CF /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		C46E398B25B3AF40009F96CF /* CircleProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressBar.swift; sourceTree = "<group>"; };
 		C46E398E25B3D626009F96CF /* ScoreDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreDTO.swift; sourceTree = "<group>"; };
@@ -690,6 +692,7 @@
 			isa = PBXGroup;
 			children = (
 				C4B07C7E25BE8984001271AF /* DashboardViewUITests.swift */,
+				C468649925BEAAB1007173C5 /* ProfileViewUITests.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -911,6 +914,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C468649A25BEAAB1007173C5 /* ProfileViewUITests.swift in Sources */,
 				C4B07C7F25BE8984001271AF /* DashboardViewUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
