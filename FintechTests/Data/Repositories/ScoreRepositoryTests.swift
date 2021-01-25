@@ -8,7 +8,7 @@
 import XCTest
 @testable import Fintech
 
-class ScoreRepositoryTest: XCTestCase {
+class ScoreRepositoryTests: XCTestCase {
     // MARK: Functionality
     func testSuccessResultReceived() {
         let dataSource = MockScoreDataSource(error: nil)

@@ -8,7 +8,7 @@
 import XCTest
 @testable import Fintech
 
-class ProfileViewModelTest: XCTestCase {
+class ProfileViewModelTests: XCTestCase {
     // MARK: Functionality
     func testReportSuccessResultReceived() {
         // Mocks

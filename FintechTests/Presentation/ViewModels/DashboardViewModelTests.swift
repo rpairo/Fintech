@@ -8,7 +8,7 @@
 import XCTest
 @testable import Fintech
 
-class DashboardViewModelTest: XCTestCase {
+class DashboardViewModelTests: XCTestCase {
     // MARK: Functionality
     func testScoreSuccessResultReceived() {
         // Mocks

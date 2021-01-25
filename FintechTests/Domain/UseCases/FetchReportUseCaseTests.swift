@@ -1,18 +1,18 @@
 //
-//  FetchScoreUseCaseTest.swift
+//  FetchReportUseCaseTest.swift
 //  FintechTests
 //
-//  Created by Raúl Pera Pairó on 18/1/21.
+//  Created by Raúl Pera Pairó on 24/1/21.
 //
 
 import XCTest
 @testable import Fintech
 
-class FetchScoreUseCaseTest: XCTestCase {
+class FetchReportUseCaseTests: XCTestCase {
     // MARK: Functionality
     func testSuccessResultReceived() {
-        let repository = MockScoreRepository(error: nil)
-        let sut = FetchScoreUseCase(repository: repository)
+        let repository = MockReportRepository(error: nil)
+        let sut = FetchReportUseCase(repository: repository)
 
         sut.execute { result in
             switch result {
@@ -25,8 +25,8 @@ class FetchScoreUseCaseTest: XCTestCase {
     }
 
     func testNetworkErrorResultReceived() {
-        let repository = MockScoreRepository(error: .network)
-        let sut = FetchScoreUseCase(repository: repository)
+        let repository = MockReportRepository(error: .network)
+        let sut = FetchReportUseCase(repository: repository)
 
         sut.execute { result in
             switch result {
@@ -40,8 +40,8 @@ class FetchScoreUseCaseTest: XCTestCase {
 
     func testUnkownErrorResultReceived() {
         let error = NSError()
-        let repository = MockScoreRepository(error: .unkown(error))
-        let sut = FetchScoreUseCase(repository: repository)
+        let repository = MockReportRepository(error: .unkown(error))
+        let sut = FetchReportUseCase(repository: repository)
 
         sut.execute { result in
             switch result {
