@@ -40,7 +40,7 @@ class ProfileViewModelTests: XCTestCase {
         XCTAssertEqual(sut.alert, ReportAlert())
 
         // Must be false
-        XCTAssertEqual(sut.isLoading, false)
+        XCTAssertFalse(sut.isLoading)
 
         // Log type must be info
         XCTAssertEqual(logUseCase.log?.type, .info)
@@ -76,7 +76,7 @@ class ProfileViewModelTests: XCTestCase {
         XCTAssertEqual(sut.alert, alert)
 
         // Must be false
-        XCTAssertEqual(sut.isLoading, false)
+        XCTAssertFalse(sut.isLoading)
 
         // Log type must be info
         XCTAssertEqual(logUseCase.log?.type, .error)
@@ -113,7 +113,7 @@ class ProfileViewModelTests: XCTestCase {
         XCTAssertEqual(sut.alert, alert)
 
         // Must be false
-        XCTAssertEqual(sut.isLoading, false)
+        XCTAssertFalse(sut.isLoading)
 
         // Log type must be info
         XCTAssertEqual(logUseCase.log?.type, .error)

@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import Fintech
 
 class DashboardViewUITests: XCTestCase {
     
