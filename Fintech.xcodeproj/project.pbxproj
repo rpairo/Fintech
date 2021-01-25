@@ -50,6 +50,8 @@
 		C4B07BE225BE38A1001271AF /* ScoreFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B07BE125BE38A1001271AF /* ScoreFactory.swift */; };
 		C4B07BEB25BE3CFE001271AF /* ScoreRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B07BEA25BE3CFE001271AF /* ScoreRepositoryTest.swift */; };
 		C4B07C1B25BE49CF001271AF /* MockScoreDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B07C1A25BE49CF001271AF /* MockScoreDataSource.swift */; };
+		C4B07C2125BE6189001271AF /* ReportRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B07C2025BE6189001271AF /* ReportRepositoryTest.swift */; };
+		C4B07C2525BE61D4001271AF /* MockReportDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B07C2425BE61D4001271AF /* MockReportDataSource.swift */; };
 		C4DFEAA225B5C0400026037D /* FetchScoreUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DFEAA125B5C0400026037D /* FetchScoreUseCaseTest.swift */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +114,8 @@
 		C4B07BE125BE38A1001271AF /* ScoreFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreFactory.swift; sourceTree = "<group>"; };
 		C4B07BEA25BE3CFE001271AF /* ScoreRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreRepositoryTest.swift; sourceTree = "<group>"; };
 		C4B07C1A25BE49CF001271AF /* MockScoreDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockScoreDataSource.swift; sourceTree = "<group>"; };
+		C4B07C2025BE6189001271AF /* ReportRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportRepositoryTest.swift; sourceTree = "<group>"; };
+		C4B07C2425BE61D4001271AF /* MockReportDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockReportDataSource.swift; sourceTree = "<group>"; };
 		C4DFEAA125B5C0400026037D /* FetchScoreUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchScoreUseCaseTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -552,6 +556,7 @@
 			isa = PBXGroup;
 			children = (
 				C4B07BEA25BE3CFE001271AF /* ScoreRepositoryTest.swift */,
+				C4B07C2025BE6189001271AF /* ReportRepositoryTest.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -560,6 +565,7 @@
 			isa = PBXGroup;
 			children = (
 				C4B07C1A25BE49CF001271AF /* MockScoreDataSource.swift */,
+				C4B07C2425BE61D4001271AF /* MockReportDataSource.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -686,10 +692,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4B07BEB25BE3CFE001271AF /* ScoreRepositoryTest.swift in Sources */,
+				C4B07C2125BE6189001271AF /* ReportRepositoryTest.swift in Sources */,
 				C4B07BE225BE38A1001271AF /* ScoreFactory.swift in Sources */,
 				C46E3A4E25B5823A009F96CF /* MockScoreRepository.swift in Sources */,
 				C4DFEAA225B5C0400026037D /* FetchScoreUseCaseTest.swift in Sources */,
 				C41524B025BE0C0E00C88406 /* FetchReportUseCaseTest.swift in Sources */,
+				C4B07C2525BE61D4001271AF /* MockReportDataSource.swift in Sources */,
 				C4B07C1B25BE49CF001271AF /* MockScoreDataSource.swift in Sources */,
 				C4B07BDB25BE3699001271AF /* ReportFactory.swift in Sources */,
 				C41524B425BE0C6100C88406 /* MockReportRepository.swift in Sources */,
