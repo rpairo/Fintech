@@ -35,39 +35,18 @@ extension ProfileViewModel {
                 self.saveReportLog(report)
             case .failure(let error):
                 self.isLoading = false
-                self.checkFetchReportError(error)
+                self.updateAlert(error)
                 self.saveErrorLog(error)
             }
         }
     }
 
-    func updateReport(_ report: ReportDTO) {
-        self.report = Report(entity: report)
+    func updateReport(_ entity: ReportDTO) {
+        report = Report(entity: entity)
     }
 
-    func checkFetchReportError(_ error: FetchReportError) {
-        switch error {
-        case .network:
-            createScoreAlert(
-                show: true,
-                title: "Network error",
-                description: "An error has occurred with the network. Check your data connection."
-            )
-        case .unkown(let error):
-            createScoreAlert(
-                show: true,
-                title: "Error",
-                description: error.localizedDescription
-            )
-        }
-    }
-
-    func createScoreAlert(show: Bool, title: String, description: String) {
-        alert = ReportAlert(
-            showing: show,
-            title: title,
-            description: description
-        )
+    func updateAlert(_ error: FetchReportError) {
+        alert = ReportAlertFactory.make(for: error)
     }
 }
 

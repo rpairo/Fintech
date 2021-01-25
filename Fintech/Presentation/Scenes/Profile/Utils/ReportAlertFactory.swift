@@ -1,5 +1,5 @@
 //
-//  ScoreAlertFactory.swift
+//  ReportAlertFactory.swift
 //  Fintech
 //
 //  Created by Raúl Pera Pairó on 25/1/21.
@@ -7,9 +7,9 @@
 
 import Foundation
 
-enum ScoreAlertFactory {
+enum ReportAlertFactory {
     // MARK: Functionality
-    static func make(for error: FetchScoreError) -> ScoreAlert {
+    static func make(for error: FetchReportError) -> ReportAlert {
         switch error {
         case .network:
             let description = "An error has occurred with the network. Check your data connection."
@@ -22,7 +22,7 @@ enum ScoreAlertFactory {
         }
     }
 
-    private static func createAlert(title: String, description: String) -> ScoreAlert {
+    private static func createAlert(title: String, description: String) -> ReportAlert {
         .init(isShowing: true, title: title, description: description)
     }
 }

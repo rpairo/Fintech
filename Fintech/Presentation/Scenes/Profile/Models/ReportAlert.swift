@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ReportAlert {
+struct ReportAlert: Equatable {
     // MARK: Properties
     var isShowing: Bool
     var title: String
@@ -20,8 +20,8 @@ struct ReportAlert {
         self.description = "An error has occurred"
     }
 
-    init(showing: Bool, title: String, description: String) {
-        self.isShowing = showing
+    init(isShowing: Bool, title: String, description: String) {
+        self.isShowing = isShowing
         self.title = title
         self.description = description
     }

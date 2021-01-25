@@ -56,6 +56,9 @@
 		C4B07C3225BE6540001271AF /* MockFetchScoreUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B07C3125BE6540001271AF /* MockFetchScoreUseCase.swift */; };
 		C4B07C3E25BE671E001271AF /* MockSaveLogUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B07C3D25BE671E001271AF /* MockSaveLogUseCase.swift */; };
 		C4B07C4325BE7186001271AF /* ScoreAlertFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B07C4225BE7186001271AF /* ScoreAlertFactory.swift */; };
+		C4B07C4925BE8000001271AF /* ProfileViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B07C4825BE8000001271AF /* ProfileViewModelTest.swift */; };
+		C4B07C4D25BE805F001271AF /* MockFetchReportUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B07C4C25BE805F001271AF /* MockFetchReportUseCase.swift */; };
+		C4B07C5425BE8250001271AF /* ReportAlertFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B07C5325BE8250001271AF /* ReportAlertFactory.swift */; };
 		C4DFEAA225B5C0400026037D /* FetchScoreUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DFEAA125B5C0400026037D /* FetchScoreUseCaseTest.swift */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +127,9 @@
 		C4B07C3125BE6540001271AF /* MockFetchScoreUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFetchScoreUseCase.swift; sourceTree = "<group>"; };
 		C4B07C3D25BE671E001271AF /* MockSaveLogUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSaveLogUseCase.swift; sourceTree = "<group>"; };
 		C4B07C4225BE7186001271AF /* ScoreAlertFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreAlertFactory.swift; sourceTree = "<group>"; };
+		C4B07C4825BE8000001271AF /* ProfileViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelTest.swift; sourceTree = "<group>"; };
+		C4B07C4C25BE805F001271AF /* MockFetchReportUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFetchReportUseCase.swift; sourceTree = "<group>"; };
+		C4B07C5325BE8250001271AF /* ReportAlertFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportAlertFactory.swift; sourceTree = "<group>"; };
 		C4DFEAA125B5C0400026037D /* FetchScoreUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchScoreUseCaseTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -358,6 +364,7 @@
 				C46E39E325B50594009F96CF /* Views */,
 				C46E39E825B51782009F96CF /* ViewModels */,
 				C46E39ED25B5186B009F96CF /* Models */,
+				C4B07C5225BE822C001271AF /* Utils */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -593,6 +600,7 @@
 			isa = PBXGroup;
 			children = (
 				C4B07C2A25BE64A8001271AF /* DashboardViewModelTest.swift */,
+				C4B07C4825BE8000001271AF /* ProfileViewModelTest.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -601,6 +609,7 @@
 			isa = PBXGroup;
 			children = (
 				C4B07C3125BE6540001271AF /* MockFetchScoreUseCase.swift */,
+				C4B07C4C25BE805F001271AF /* MockFetchReportUseCase.swift */,
 				C4B07C3D25BE671E001271AF /* MockSaveLogUseCase.swift */,
 			);
 			path = UseCases;
@@ -610,6 +619,14 @@
 			isa = PBXGroup;
 			children = (
 				C4B07C4225BE7186001271AF /* ScoreAlertFactory.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C4B07C5225BE822C001271AF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C4B07C5325BE8250001271AF /* ReportAlertFactory.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -743,6 +760,8 @@
 				C4DFEAA225B5C0400026037D /* FetchScoreUseCaseTest.swift in Sources */,
 				C41524B025BE0C0E00C88406 /* FetchReportUseCaseTest.swift in Sources */,
 				C4B07C2525BE61D4001271AF /* MockReportDataSource.swift in Sources */,
+				C4B07C4D25BE805F001271AF /* MockFetchReportUseCase.swift in Sources */,
+				C4B07C4925BE8000001271AF /* ProfileViewModelTest.swift in Sources */,
 				C4B07C1B25BE49CF001271AF /* MockScoreDataSource.swift in Sources */,
 				C4B07BDB25BE3699001271AF /* ReportFactory.swift in Sources */,
 				C4B07C3E25BE671E001271AF /* MockSaveLogUseCase.swift in Sources */,
@@ -778,6 +797,7 @@
 				C47A0A9725B1BF920068DC35 /* FintechApp.swift in Sources */,
 				C46E39EF25B518AE009F96CF /* ProfileViewModel.swift in Sources */,
 				C46E39FD25B52ADF009F96CF /* FetchReportUseCase.swift in Sources */,
+				C4B07C5425BE8250001271AF /* ReportAlertFactory.swift in Sources */,
 				C46E399725B3D864009F96CF /* FetchScoreUseCaseable.swift in Sources */,
 				C46E39DC25B4D6C8009F96CF /* LogDataSourceable.swift in Sources */,
 				C46E3A1B25B554DF009F96CF /* ReportView.swift in Sources */,
