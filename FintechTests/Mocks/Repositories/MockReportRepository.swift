@@ -10,21 +10,24 @@ import Foundation
 
 struct MockReportRepository: ReportRepositable {
     // MARK: Properties
-    let result: Bool
+    let error: FetchReportError?
     let entity: ReportDTO
 
     // MARK: Constructor
-    init(result: Bool) {
-        self.result = result
+    init(error: FetchReportError?) {
+        self.error = error
         self.entity = ReportFactory.makeDomainEntity()
     }
 
     // MARK: Functionality
     func fetch(completion: @escaping FetchReportResult) {
-        if result {
-            completion(.success(entity))
-        } else {
+        switch error {
+        case .network:
             completion(.failure(.network))
+        case .unkown(let error):
+            completion(.failure(.unkown(error)))
+        case .none:
+            completion(.success(entity))
         }
     }
 }

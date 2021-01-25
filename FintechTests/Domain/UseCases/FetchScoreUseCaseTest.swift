@@ -11,7 +11,7 @@ import XCTest
 class FetchScoreUseCaseTest: XCTestCase {
     // MARK: Functionality
     func testSuccessResultReceived() {
-        let repository = MockScoreRepository(result: true)
+        let repository = MockScoreRepository(error: nil)
         let sut = FetchScoreUseCase(repository: repository)
 
         sut.execute { result in
@@ -24,8 +24,8 @@ class FetchScoreUseCaseTest: XCTestCase {
         }
     }
 
-    func testFailureResultReceived() {
-        let repository = MockScoreRepository(result: false)
+    func testNetworkErrorResultReceived() {
+        let repository = MockScoreRepository(error: .network)
         let sut = FetchScoreUseCase(repository: repository)
 
         sut.execute { result in
@@ -33,7 +33,22 @@ class FetchScoreUseCaseTest: XCTestCase {
             case .success(let entity):
                 XCTAssertNil(entity)
             case .failure(let error):
-                XCTAssertNotNil(error)
+                XCTAssert(error == .network)
+            }
+        }
+    }
+
+    func testUnkownErrorResultReceived() {
+        let error = NSError()
+        let repository = MockScoreRepository(error: .unkown(error))
+        let sut = FetchScoreUseCase(repository: repository)
+
+        sut.execute { result in
+            switch result {
+            case .success(let entity):
+                XCTAssertNil(entity)
+            case .failure(let error):
+                XCTAssert(error == .unkown(error))
             }
         }
     }

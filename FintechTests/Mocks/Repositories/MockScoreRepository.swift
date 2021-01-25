@@ -10,21 +10,24 @@ import Foundation
 
 struct MockScoreRepository: ScoreRepositable {
     // MARK: Properties
-    let result: Bool
+    let error: FetchScoreError?
     let entity: ScoreDTO
 
     // MARK: Constructor
-    init(result: Bool) {
-        self.result = result
+    init(error: FetchScoreError?) {
+        self.error = error
         self.entity = ScoreFactory.makeDomainEntity()
     }
 
     // MARK: Functionality
     func fetch(completion: @escaping FetchScoreResult) {
-        if result {
-            completion(.success(entity))
-        } else {
+        switch error {
+        case .network:
             completion(.failure(.network))
+        case .unkown(let error):
+            completion(.failure(.unkown(error)))
+        case .none:
+            completion(.success(entity))
         }
     }
 }
