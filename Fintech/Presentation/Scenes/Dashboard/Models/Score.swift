@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Score {
+struct Score: Equatable {
     // MARK: Properties
     var value: Int?
     var maxValue: Int?

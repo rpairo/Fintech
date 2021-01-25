@@ -33,7 +33,7 @@ class FetchReportUseCaseTest: XCTestCase {
             case .success(let entity):
                 XCTAssertNil(entity)
             case .failure(let error):
-                XCTAssert(error == .network)
+                XCTAssertEqual(error, .network)
             }
         }
     }
@@ -48,7 +48,7 @@ class FetchReportUseCaseTest: XCTestCase {
             case .success(let entity):
                 XCTAssertNil(entity)
             case .failure(let error):
-                XCTAssert(error == .unkown(error))
+                XCTAssertEqual(error, .unkown(error))
             }
         }
     }

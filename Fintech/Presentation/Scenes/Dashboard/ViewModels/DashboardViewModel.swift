@@ -35,39 +35,18 @@ extension DashboardViewModel {
                 self.saveScoreLog(score)
             case .failure(let error):
                 self.isLoading = false
-                self.checkFetchScoreError(error)
+                self.updateAlert(error)
                 self.saveErrorLog(error)
             }
         }
     }
 
-    func updateScore(_ score: ScoreDTO) {
-        self.score = Score(entity: score)
+    func updateScore(_ entity: ScoreDTO) {
+        score = Score(entity: entity)
     }
 
-    func checkFetchScoreError(_ error: FetchScoreError) {
-        switch error {
-        case .network:
-            createScoreAlert(
-                show: true,
-                title: "Network error",
-                description: "An error has occurred with the network. Check your data connection."
-            )
-        case .unkown(let error):
-            createScoreAlert(
-                show: true,
-                title: "Error",
-                description: error.localizedDescription
-            )
-        }
-    }
-
-    func createScoreAlert(show: Bool, title: String, description: String) {
-        alert = ScoreAlert(
-            showing: show,
-            title: title,
-            description: description
-        )
+    func updateAlert(_ error: FetchScoreError) {
+        alert = ScoreAlertFactory.make(for: error)
     }
 }
 
