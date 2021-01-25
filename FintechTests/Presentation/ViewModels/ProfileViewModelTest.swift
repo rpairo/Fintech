@@ -46,7 +46,7 @@ class ProfileViewModelTest: XCTestCase {
         XCTAssertEqual(logUseCase.log?.type, .info)
     }
 
-    func testScoreNetworkErrorResultReceived() {
+    func testReportNetworkErrorResultReceived() {
         // Mocks
         let reportUseCase = MockFetchReportUseCase(error: .network)
         let logUseCase = MockSaveLogUseCase()
@@ -82,7 +82,7 @@ class ProfileViewModelTest: XCTestCase {
         XCTAssertEqual(logUseCase.log?.type, .error)
     }
 
-    func testScoreUnkownErrorResultReceived() {
+    func testReportUnkownErrorResultReceived() {
         // Mocks
         let error = NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: ""])
         let reportUseCase = MockFetchReportUseCase(error: .unkown(error))
