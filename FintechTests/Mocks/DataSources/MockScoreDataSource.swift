@@ -8,19 +8,30 @@
 import Foundation
 @testable import Fintech
 
-struct MockScoreDataSource: ScoreRepositable {
+struct MockScoreDataSource: ScoreDataSourceable {
     // MARK: Properties
-    let result: Bool
+    let error: ScoreDataSourceError?
     let entity: ScoreEntity
 
     // MARK: Constructor
-    init(result: Bool) {
-        self.result = result
+    init(error: ScoreDataSourceError?) {
+        self.error = error
         self.entity = ScoreFactory.makeDataEntity()
     }
 
     // MARK: Functionality
-    func fetch(completion: @escaping FetchScoreResult) {
-        
+    func fetch(completion: @escaping ScoreDataSourceResult) {
+        switch error {
+        case .data:
+            completion(.failure(.data))
+        case .decoding:
+            completion(.failure(.decoding))
+        case .url:
+            completion(.failure(.url))
+        case .unkown(let error):
+            completion(.failure(.unkown(error)))
+        case .none:
+            completion(.success(entity))
+        }
     }
 }
